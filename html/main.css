@@ -1,0 +1,20 @@
+h2{
+   border-top: 1px solid rgb(204, 204, 204);
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table tr{
+  border-bottom: solid 1px #eee;
+  cursor: pointer;
+}
+
+table th,table td{
+  text-align: left;
+  width: 50%;
+  padding: 15px 0;
+}
