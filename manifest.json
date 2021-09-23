@@ -1,6 +1,6 @@
 {
   "name": "Get Bandai Gunpla Price",
-  "version": "1.0",
+  "version": "0.0.1",
   "manifest_version": 3,
   "action": {
     "default_title": "Click to get Bandai Price."
