@@ -1,17 +1,23 @@
 {
-  "name": "getBandaiPrice",
+  "name": "Get Bandai Gunpla Price",
   "version": "1.0",
   "manifest_version": 3,
   "action": {
     "default_title": "Click to get Bandai Price."
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.co.jp/*"],
+      "js": ["content.js"]
+    }
+  ],
   "permissions": [
+    "tabs",
 		"activeTab",
 		"scripting"
 	],
 	"host_permissions": [
-		"https://bandai-hobby.net/",
-		"https://www.amazon.co.jp/"
+		"https://bandai-hobby.net/*"
 	],
   "background": {
     "service_worker": "background.js"
