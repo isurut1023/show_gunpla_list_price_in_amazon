@@ -12,9 +12,7 @@
     }
   ],
   "permissions": [
-    "tabs",
-		"activeTab",
-		"scripting"
+    "tabs"
 	],
 	"host_permissions": [
 		"https://bandai-hobby.net/*"
