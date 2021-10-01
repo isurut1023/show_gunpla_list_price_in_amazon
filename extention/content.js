@@ -18,6 +18,8 @@ chrome.runtime.onMessage.addListener(
       }
     }else {
       // HTML 生成
+      div = document.createElement("div");
+      div.id = "getBandaiPrice";
       // 見出しの作成
       // hGunplaListPrice = document.createElement("h2");
       // hGunplaListPrice.id = "gunplaListPrise"
@@ -29,18 +31,17 @@ chrome.runtime.onMessage.addListener(
       // element.insertAdjacentElement('afterend', hGunplaListPrice);
       // テーブル
       tbl = document.createElement("table");
-      tbl.id = "getBandaiPrice";
       tblBody = document.createElement("tbody");
       // テーブルヘッダー
       // テーブルヘッダー「商品名」
       row = document.createElement("tr");
       th1 = document.createElement("th");
-      th1Text = document.createTextNode("関連商品");
+      th1Text = document.createTextNode("関連商品（バンダイ ホビーサイト外部リンク）");
       th1.appendChild(th1Text)
       row.appendChild(th1)
       // テーブルヘッダー「価格」
       th2 = document.createElement("th");
-      th2Text = document.createTextNode("ガンプラホビーサイト掲載価格");
+      th2Text = document.createTextNode("バンダイ ホビーサイト掲載価格");
       th2.appendChild(th2Text)
       row.appendChild(th2)
       // テーブルヘッダーの作成
@@ -106,11 +107,31 @@ chrome.runtime.onMessage.addListener(
         // 列の作成
         tblBody.appendChild(row);
       }
-
       // テーブルの作成
       tbl.appendChild(tblBody);
+
+      // 注意事項の作成
+      p = document.createElement("p");
+      p.style.color = "#565959";
+      pText = document.createTextNode("※表示されている内容が適切でない場合、お手数ですが");
+      p.appendChild(pText);
+
+      anchor = document.createElement("a");
+      anchor.href = "https://bandai-hobby.net/item_all/";
+      anchor.target = "_blank"
+      anchor.rel = "noopener noreferrer"
+      anchorText = document.createTextNode("バンダイ ホビーサイトの検索ページ");
+      anchor.appendChild(anchorText)
+      p.appendChild(anchor);
+
+      pText = document.createTextNode("で検索をお願いします。");
+      p.appendChild(pText);
+
+      // HTML への挿入
+      div.appendChild(tbl);
+      div.appendChild(p);
       element = document.getElementById('ppd');
-    	element.insertAdjacentElement('afterend', tbl);
+    	element.insertAdjacentElement('afterend', div);
 
       // backgroud へレスポンス
       sendResponse({farewell: "complete"});
