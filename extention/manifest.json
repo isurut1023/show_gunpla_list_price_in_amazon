@@ -20,9 +20,5 @@
   ],
   "permissions": [
     "tabs"
-	],
-	"host_permissions": [
-	],
-  "background": {
-  }
+	]
 }
