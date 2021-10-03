@@ -8,16 +8,9 @@
   "action": {
     "default_title": "Click to get Bandai Price."
   },
-  "content_scripts": [
-    {
-      "matches": ["https://www.amazon.co.jp/*"],
-      "js": [
-        "bandai_data.js",
-        "search.js",
-        "insert.js"
-      ]
-    }
-  ],
+  "action": {
+    "default_popup": "html/popup.html"
+  },
   "permissions": [
     "tabs"
 	]
