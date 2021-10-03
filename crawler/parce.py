@@ -48,45 +48,67 @@ def transfer_alphabet_double_to_half(text):
     return text.translate(double_to_half_alphabet)
 
 # バンダイホビーサイトのデータの取得
-bandai_data = json.load(open('bandai_data.json', 'r'))
-brands  = bandai_data['brand']
-scales  = bandai_data['scale']
-seriess = bandai_data['series']
+bandai_data = json.load(open('bandai_tag.json', 'r'))
+
+# ブランドの取得
+brands = bandai_data['brand']
+# バンダイに登録しているブランドを取得
+bandai_brand_list = list(brands.keys())
+# ブランドのエイリアスを取得
+bandai_brand_alias_list = []
+for b in list(brands.values()):
+    bandai_brand_alias_list = bandai_brand_alias_list + b['alias']
+# エイリアスを含めたブランドのリスト
+brand_list  = sorted(list(set(list(brands.keys()) + bandai_brand_alias_list)), key=len, reverse=True)
+
+# スケールの取得
+scales      = bandai_data['scale']
 
 # クロールした内容をパースしてファイルに出力
 kits = []
-files = glob.glob("gunpla_*.json")
+files = glob.glob("master/gunpla_*.json")
 for file in files:
     gunpla = json.load(open(file, 'r'))
 
     for g in gunpla['gunpla']:
+        # 商品名の全角英数字記号スペースを全て半角に変換
         product = transfer_alphabet_double_to_half(transfer_number_double_to_half(transfer_symbol_double_to_half(g['product'])))
+        name = product
 
-        # ブランド（e.g "HG","MG"）の取得
-        brand   = ''
-        l = product.split(' ')
-        for p in l:
-            for b in brands:
-                if p == b:
-                    brand = b
-                    l.remove(b)
+        # product からブランド（e.g "HG","MG"）の取得
+        brand = []
+        for b in brand_list:
+            if b in product:
+                brand.append(b)
+                name = name.replace(b, '')
+                break
+        # g['brand'] とそのエイリアスを取得
+        for gb in g['brand']:
+            brand.append(gb)
+            brand = brand + brands[gb]['alias']
+        # series からブランドを取得
+        for s in g['series']:
+            for b in brands.values():
+                if s in b["series"]:
+                    brand = brand + b["alias"]
+        # 重複を削除
+        brand = list(set(brand))
 
         # スケール（e.g "1/144","1/100"）の取得
-        scale   = ''
-        for p in l:
-            for s in scales:
-                if p == s:
-                    scale = s
-                    l.remove(s)
-
+        scale = ''
+        for s in scales:
+            if s in product:
+                scale = s
+                name = name.replace(s, '')
+                break
         # 商品名からブランドとスケールを省いた文字列（≒名前）を取得
-        name    = ''.join(l)
+        name = name.lstrip()
 
         # 商品ページの　URL 末尾の数字４桁を取得
-        no      = re.search(r'[0-9]{4}', g['url']).group()
+        no = re.search(r'[0-9]{4}', g['url']).group()
 
         # 価格を取得
-        price   = g['price']
+        price = g['price']
 
         # シリーズを（e.g "機動戦士ガンダム"）取得
         series  = g['series']
@@ -95,6 +117,7 @@ for file in files:
 
 kits_unique = sorted(list(map(json.loads, set(map(json.dumps, kits)))), key=lambda x:x['no'])
 
-bandai_data["products"] = kits_unique
-with open('bandai_data.json', 'w') as f:
-    json.dump(bandai_data, f, ensure_ascii=False, indent=2)
+bandai_products = {}
+bandai_products = {"brand":brands, "scale":scales, "series":bandai_data["series"], "products":kits_unique}
+with open('bandai_products.json', 'w') as f:
+    json.dump(bandai_products, f, ensure_ascii=False, indent=2)

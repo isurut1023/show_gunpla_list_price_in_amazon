@@ -8,12 +8,9 @@ if (document.getElementById("getBandaiPrice") !== null){
   }
 }
 
-// バンダイホビーサイトのデータの読み込み
-console.log('bandai_data_json;', bandai_data_json)
-
 // Amazon 商品ページからタイトルを取得
 var amazon_title = document.title.replace(/^Amazon \| /g, "").replace(/\| プラモデル 通販$/g, "");
-//var amazon_title = "ENTRY GRADE 機動戦士ガンダムSEED ストライクガンダム 1/144スケール 色分け済みプラモデル"
+var amazon_title = "MG 1/100 RX-0 ユニコーンガンダム Ver.Ka (機動戦士ガンダムUC)"
 console.log('Amazon Title;', amazon_title)
 
 // 全角英数記号スペースを半角化
@@ -32,7 +29,7 @@ console.log('amazon_title : ', amazon_title);
 
 // Series の取得
 var series = ''
-var seriess = bandai_data_json["series"];
+var seriess = bandai_data_json["series"].sort(function(a, b) {return b.length - a.length;});
 for (const s of seriess) {
   if (amazon_title.indexOf(s) >= 0) {
     amazon_title = amazon_title.replace(s, "");
@@ -42,9 +39,13 @@ for (const s of seriess) {
 }
 console.log('series:', series);
 
-// Brand を取得
-var brand = ''
-var brands = bandai_data_json["brand"];
+// bandai_data からブランドのリストを取得
+var brands = []
+for (const key in bandai_data_json["brand"])
+  brands = brands.concat(bandai_data_json["brand"][key]['alias'])
+brands = Array.from(new Set(brands)).sort(function(a, b) {return b.length - a.length;});
+// title から Brand を取得
+var brand  = ''
 for (const b of brands) {
   if (amazon_title.indexOf(b) >= 0) {
     amazon_title = amazon_title.replace(b, "");
@@ -65,7 +66,6 @@ for (const s of scales) {
   }
 }
 console.log('scale:', scale);
-console.log(amazon_title)
 
 // 不要な文字列を削除
 var removals = [
@@ -93,20 +93,24 @@ console.log('names:', names);
 // 検索
 var search = bandai_data_json['products']
 // {
-//   "product": "MG 1/100 RX-78-2 ガンダム ver1.5",
-//   "price": "3,300円（税10%込）",
-//   "brand": "MG",
-//   "scale": "1/100",
-//   "name": "RX-78-2ガンダムver1.5",
-//   "series": [
-//     "機動戦士ガンダム"
+//   "product": "HG 1/144 ガンダムサバーニャ(最終決戦仕様)",
+//   "price": "2,750円（税10%込）",
+//   "brand": [
+//     " HG［ハイグレード］",
+//     "HG",
+//     "HGUC"
 //   ],
-//   "no": "0148"
+//   "scale": "1/144",
+//   "name": "ガンダムサバーニャ(最終決戦仕様)",
+//   "series": [
+//     "機動戦士ガンダム00[ダブルオー]"
+//   ],
+//   "no": "4660"
 // }
 
 // brand で絞り込み
 var result = search.filter(function(item, index){
-  if (item.brand == brand) return true;
+  if ((item.brand).indexOf(brand) >= 0) return true;
 });
 console.log('search by brand:', result)
 
@@ -135,8 +139,6 @@ for (const name of names) {
   if (result.length) {
     results.push(result);
   }
-  console.log(name)
-  console.log(result)
 }
 console.log("search by name:", results)
 
