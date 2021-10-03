@@ -10,7 +10,7 @@ if (document.getElementById("getBandaiPrice") !== null){
 
 // Amazon 商品ページからタイトルを取得
 var amazon_title = document.title.replace(/^Amazon \| /g, "").replace(/\| プラモデル 通販$/g, "");
-// var amazon_title = "MG 1/100 RX-0 ユニコーンガンダム Ver.Ka (機動戦士ガンダムUC)"
+//var amazon_title = "HGUC 機動戦士クロスボーン・ガンダム 1/144スケール 色分け済みプラモデル"
 console.log('Amazon Title;', amazon_title)
 
 // 全角英数記号スペースを半角化
@@ -86,8 +86,14 @@ for (const v of removals) {
 amazon_title = amazon_title.replace(/^\s+|\s+$/g,'').replace(/ +/g,' ')
 console.log('amazon_title:', amazon_title);
 
-// リスト化
+// 名前を分解、リスト化
 names = amazon_title.split(' ')
+// 名前に "()" 含む場合は、"()" とその中の文字列を除外したものを追加
+for (const n of names) {
+  if (n.match(/\(.+\)/g)) {
+    names.push(n.replace(/\(.+\)/g, ''))
+  }
+}
 console.log('names:', names);
 
 // 検索
