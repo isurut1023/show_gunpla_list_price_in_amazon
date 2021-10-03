@@ -1,23 +1,16 @@
 {
   "manifest_version": 3,
   "name": "Get Bandai Gunpla Price",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icons": {
     "128": "icon.png"
   },
   "action": {
     "default_title": "Click to get Bandai Price."
   },
-  "content_scripts": [
-    {
-      "matches": ["https://www.amazon.co.jp/*"],
-      "js": [
-        "bandai_data.js",
-        "search.js",
-        "insert.js"
-      ]
-    }
-  ],
+  "action": {
+    "default_popup": "html/popup.html"
+  },
   "permissions": [
     "tabs"
 	]
