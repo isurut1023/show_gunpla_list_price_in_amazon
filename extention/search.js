@@ -10,7 +10,7 @@ if (document.getElementById("getBandaiPrice") !== null){
 
 // Amazon 商品ページからタイトルを取得
 var amazon_title = document.title.replace(/^Amazon \| /g, "").replace(/\| プラモデル 通販$/g, "");
-var amazon_title = "MG 1/100 RX-0 ユニコーンガンダム Ver.Ka (機動戦士ガンダムUC)"
+// var amazon_title = "MG 1/100 RX-0 ユニコーンガンダム Ver.Ka (機動戦士ガンダムUC)"
 console.log('Amazon Title;', amazon_title)
 
 // 全角英数記号スペースを半角化
