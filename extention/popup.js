@@ -10,8 +10,8 @@ if (document.getElementById("getBandaiPrice") !== null){
 
 chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   // Amazon 商品ページからタイトルを取得
-  var amazon_title = tabs[0]['title'];
-  console.log('amazon_title : ', amazon_title);
+  var tag_title = tabs[0]['title'];
+  console.log('tag_title : ', tag_title);
 
   // 全角英数記号スペースを半角化
   function toHalfWidth(strVal){
@@ -24,15 +24,15 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
     ).replace(/　/g," ");
     return halfVal;
   }
-  amazon_title = toHalfWidth(amazon_title);
-  console.log('amazon_title : ', amazon_title);
+  tag_title = toHalfWidth(tag_title);
+  console.log('tag_title : ', tag_title);
 
   // Series の取得
   var series = ''
   var seriess = bandai_data_json["series"].sort(function(a, b) {return b.length - a.length;});
   for (const s of seriess) {
-    if (amazon_title.indexOf(s) >= 0) {
-      amazon_title = amazon_title.replace(s, "");
+    if (tag_title.indexOf(s) >= 0) {
+      tag_title = tag_title.replace(s, "");
       series = s;
       break;
     }
@@ -47,8 +47,8 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   // title から Brand を取得
   var brand  = ''
   for (const b of brands) {
-    if (amazon_title.indexOf(b) >= 0) {
-      amazon_title = amazon_title.replace(b, "");
+    if (tag_title.indexOf(b) >= 0) {
+      tag_title = tag_title.replace(b, "");
       brand = b;
       break;
     }
@@ -59,8 +59,8 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   var scale = ''
   var scales = bandai_data_json["scale"];
   for (const s of scales) {
-    if (amazon_title.indexOf(s) >= 0) {
-      amazon_title = amazon_title.replace(s, "");
+    if (tag_title.indexOf(s) >= 0) {
+      tag_title = tag_title.replace(s, "");
       scale = s;
       break;
     }
@@ -72,22 +72,27 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
     'BANDAI SPIRITS',
     'BANDAI',
     '色分け済みプラモデル',
+    '| プラモデル 通販',
     'プラモデル',
-    'スケール'
+    'スケール',
+    'Amazon |',
+    '- メルカリ',
+    '新品',
+    '中古'
   ];
   for (const v of removals) {
-    amazon_title = amazon_title.replace(v,'');
+    tag_title = tag_title.replace(v,'')
   }
-  // amazon_title_split = amazon_title_split.filter(function(v){
+  // tag_title_split = tag_title_split.filter(function(v){
   //   return ! removals.includes(v);
   // });
 
-  // 連続する半角スペースと末尾の数字を削除
-  amazon_title = amazon_title.replace(/^\s+|\s+$/g,'').replace(/ +/g,' ')
-  console.log('amazon_title:', amazon_title);
+  // 連続する半角スペースを削除
+  tag_title = tag_title.replace(/^\s+|\s+$/g,'').replace(/ +/g,' ')
+  console.log('tag_title:', tag_title);
 
   // 名前を分解、リスト化
-  names = amazon_title.split(' ')
+  names = tag_title.split(' ')
   // 名前に "()" 含む場合は、"()" とその中の文字列を除外したものを追加
   for (const n of names) {
     if (n.match(/\(.+\)/g)) {
@@ -264,5 +269,7 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   // insert_element_id = 'ppd'
   // element = document.getElementById(insert_element_id);
   // element.insertAdjacentElement('afterend', div);
+  loader = document.getElementById('loader');
+  loader.remove();
   document.body.insertBefore(div, document.getElementById("content"));
 });
