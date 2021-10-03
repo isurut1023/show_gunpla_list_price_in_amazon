@@ -1,5 +1,55 @@
-body{
-  min-width: 850px;
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  min-width: 500px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 650px;
+      box-shadow: 0 0 15px -6px #00000073;
+}
+table tr {
+  background-color: #fff;
+}
+table tbody tr:hover{
+  background-color: #fcd7d7;
+}
+table th,
+table td {
+  padding: .35em 1em;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+table thead th {
+    font-size: .85em;
+    padding: 1em;
+}
+table thead tr{
+  background-color: #de5454;
+  color:#fff;
+}
+table tbody th {
+  text-align: left;
+  font-size: .8em;
+}
+.txt{
+   text-align: left;
+   font-size: .75em;
+}
+.price{
+  text-align: right;
+  color: #000;
+  /* font-weight: bold; */
+}
+@media screen and (max-width: 600px) {
+  table{width: 100%;}
+}
+
+/* body{
+  min-width: 500px;
 }
 
 h2{
@@ -17,22 +67,33 @@ table tr{
   cursor: pointer;
 }
 
-table th,table td{
+table th{
+  text-align: left;
+  padding: 5px 0;
+}
+
+.products{
+  width: 75%;
+}
+
+.prices{
+  width: 25%;
+}
+
+.product{
   text-align: left;
   padding: 10px 0;
 }
 
-table th products{
-  width: 75%;
+.price{
+  text-align: right;
+  padding: 10px 0;
 }
 
-table th products{
-  width: 25%;
-}
 
 p{
   color: #565959;
-}
+} */
 
 /* ロード中 */
 .spinner {

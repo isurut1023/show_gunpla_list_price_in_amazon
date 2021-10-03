@@ -165,7 +165,7 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   console.log("Combined result:", result)
 
   // 上位１０件を抽出
-  result = result.slice(0, 9);
+  result = result.slice(0, 7);
   console.log("Result to insert:", result)
 
   // HTML 生成
@@ -183,23 +183,24 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   // element.insertAdjacentElement('afterend', hGunplaListPrice);
   // テーブル
   tbl = document.createElement("table");
+  tHead = document.createElement("thead");
   tblBody = document.createElement("tbody");
   // テーブルヘッダー
   // テーブルヘッダー「商品名」
   row = document.createElement("tr");
   th1 = document.createElement("th");
-  th1.id = "products";
-  th1Text = document.createTextNode("関連商品（バンダイ ホビーサイト外部リンク）");
+  th1.className = "products";
+  th1Text = document.createTextNode("関連商品（バンダイホビーサイト外部リンク）");
   th1.appendChild(th1Text)
   row.appendChild(th1)
   // テーブルヘッダー「価格」
   th2 = document.createElement("th");
-  th2.id = "prices";
-  th2Text = document.createTextNode("バンダイ ホビーサイト掲載価格");
+  th2.className = "prices";
+  th2Text = document.createTextNode("バンダイホビーサイト価格");
   th2.appendChild(th2Text)
   row.appendChild(th2)
   // テーブルヘッダーの作成
-  tblBody.appendChild(row);
+  tHead.appendChild(row);
   // テーブルの装飾
   // tbl.style.borderCollapse = "collapse"
   // tbl.style.minWidth       = "935px"
@@ -219,6 +220,7 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
     row = document.createElement("tr");
     // カラム「商品名」
     td1 = document.createElement("td");
+    td1.className = "product";
     // アンカー
     anchor = document.createElement("a");
     anchor.href = bandai_hobby_url + r['no'] + '/';
@@ -234,6 +236,7 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
 
     // カラム「価格」
     td2 = document.createElement("td");
+    td2.className = "price";
     td2Text = document.createTextNode(r['price']);
     td2.appendChild(td2Text)
     row.appendChild(td2)
@@ -242,19 +245,20 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
     tblBody.appendChild(row);
   }
   // テーブルの作成
+  tbl.appendChild(tHead);
   tbl.appendChild(tblBody);
 
   // 注意事項の作成
   p = document.createElement("p");
   p.style.color = "#565959";
-  pText = document.createTextNode("※表示されている内容が適切でない場合、お手数ですが");
+  pText = document.createTextNode("※表示内容が適切でない場合、");
   p.appendChild(pText);
 
   anchor = document.createElement("a");
   anchor.href = "https://bandai-hobby.net/item_all/";
   anchor.target = "_blank"
   anchor.rel = "noopener noreferrer"
-  anchorText = document.createTextNode("バンダイ ホビーサイトの検索ページ");
+  anchorText = document.createTextNode("バンダイホビーサイト");
   anchor.appendChild(anchorText)
   p.appendChild(anchor);
 
