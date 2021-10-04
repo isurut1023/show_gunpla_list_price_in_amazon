@@ -183,23 +183,24 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   // element.insertAdjacentElement('afterend', hGunplaListPrice);
   // テーブル
   tbl = document.createElement("table");
+  tHead = document.createElement("thead");
   tblBody = document.createElement("tbody");
   // テーブルヘッダー
   // テーブルヘッダー「商品名」
   row = document.createElement("tr");
   th1 = document.createElement("th");
-  th1.id = "products";
-  th1Text = document.createTextNode("関連商品（バンダイ ホビーサイト外部リンク）");
+  th1.className = "products";
+  th1Text = document.createTextNode("関連商品（バンダイホビーサイト外部リンク）");
   th1.appendChild(th1Text)
   row.appendChild(th1)
   // テーブルヘッダー「価格」
   th2 = document.createElement("th");
-  th2.id = "prices";
-  th2Text = document.createTextNode("バンダイ ホビーサイト掲載価格");
+  th2.className = "prices";
+  th2Text = document.createTextNode("バンダイホビーサイト価格");
   th2.appendChild(th2Text)
   row.appendChild(th2)
   // テーブルヘッダーの作成
-  tblBody.appendChild(row);
+  tHead.appendChild(row);
   // テーブルの装飾
   // tbl.style.borderCollapse = "collapse"
   // tbl.style.minWidth       = "935px"
@@ -215,10 +216,19 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
 
   // 検索結果から商品名、価格、リンクを取得
   bandai_hobby_url = "https://bandai-hobby.net/item/"
+  i = 0
   for (const r of result) {
     row = document.createElement("tr");
+
+    // 列に iD を付与し、8 以降はデフォルトでは非表示
+    row.id = i
+    if (i > 5) {
+      row.className = 'toggle';
+    }
+    i += 1
     // カラム「商品名」
     td1 = document.createElement("td");
+    td1.className = "product";
     // アンカー
     anchor = document.createElement("a");
     anchor.href = bandai_hobby_url + r['no'] + '/';
@@ -234,6 +244,7 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
 
     // カラム「価格」
     td2 = document.createElement("td");
+    td2.className = "price";
     td2Text = document.createTextNode(r['price']);
     td2.appendChild(td2Text)
     row.appendChild(td2)
@@ -242,34 +253,71 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
     tblBody.appendChild(row);
   }
   // テーブルの作成
+  tbl.appendChild(tHead);
   tbl.appendChild(tblBody);
 
+  // テーブル の挿入
+  div.appendChild(tbl);
+  document.body.appendChild(div);
+
+  // 列が８以上の場合は "read more" を追加・挿入
+  if (tblBody.childElementCount > 8) {
+    div_button = document.createElement("div");
+    div_button.className = "button_wrapper";
+
+    button = document.createElement('button');
+    button.id = 'button';
+    button.className = 'more'
+    buttonText = document.createTextNode("< read more >");
+    button.appendChild(buttonText)
+    div_button.appendChild(button);
+
+    //div.appendChild(div_button);
+    document.body.appendChild(div_button);
+  }
+
   // 注意事項の作成
+  div_attention = document.createElement("div");
+  div_attention.id = "attention";
   p = document.createElement("p");
   p.style.color = "#565959";
-  pText = document.createTextNode("※表示されている内容が適切でない場合、お手数ですが");
+  pText = document.createTextNode("※表示内容が適切でない場合、");
   p.appendChild(pText);
 
   anchor = document.createElement("a");
   anchor.href = "https://bandai-hobby.net/item_all/";
   anchor.target = "_blank"
   anchor.rel = "noopener noreferrer"
-  anchorText = document.createTextNode("バンダイ ホビーサイトの検索ページ");
+  anchorText = document.createTextNode("バンダイホビーサイト");
   anchor.appendChild(anchorText)
   p.appendChild(anchor);
 
   pText = document.createTextNode("で検索をお願いします。");
   p.appendChild(pText);
 
-  // 挿入する HTML の完成
-  div.appendChild(tbl);
-  div.appendChild(p);
+  div_attention.appendChild(p)
+  document.body.appendChild(div_attention);
 
-  // 挿入する箇所の上の要素を指定
-  // insert_element_id = 'ppd'
-  // element = document.getElementById(insert_element_id);
-  // element.insertAdjacentElement('afterend', div);
+  // フッターを挿入
+  //div.appendChild(p);
+
+  // HTML を挿入
+  //document.body.insertBefore(div, document.getElementById("content"));
+
+  // ローディングを削除
   loader = document.getElementById('loader');
   loader.remove();
-  document.body.insertBefore(div, document.getElementById("content"));
+
+　// "read more" のアクション
+  // 8列以上を表示・非表示を切り替える
+  // "read more", "read less"を切り替える
+  document.getElementById('button').addEventListener('click', function() {
+    el = $('.toggle')
+    el.toggleClass('show')
+    if ($(this).text() === '< read more >') {
+      $(this).text('> read less <');
+    } else {
+      $(this).text('< read more >');
+    }
+  });
 });

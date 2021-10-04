@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Get Bandai Gunpla Price",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "icons": {
     "128": "icon.png"
   },

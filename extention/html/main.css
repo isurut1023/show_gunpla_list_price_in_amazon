@@ -1,37 +1,78 @@
-body{
-  min-width: 850px;
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  line-height: 1.25;
+  min-width: 500px;
 }
 
-h2{
-   border-top: 1px solid rgb(204, 204, 204);
+div {
+  margin-top: 3px;
 }
 
-table{
+p {
+  margin-top: 8px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+table {
   border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  width: 650px;
+      box-shadow: 0 0 15px -6px #00000073;
 }
-
-table tr{
-  border-bottom: solid 1px #eee;
-  cursor: pointer;
+table tr {
+  background-color: #fff;
 }
-
-table th,table td{
+table tbody tr:hover{
+  background-color: #fcd7d7;
+}
+table th,
+table td {
+  padding: .35em 1em;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+table thead th {
+    font-size: .85em;
+    padding: 1em;
+}
+table thead tr{
+  background-color: #de5454;
+  color:#fff;
+}
+table tbody th {
   text-align: left;
-  padding: 10px 0;
+  font-size: .8em;
+}
+.toggle {
+  display: none;
+}
+.show {
+  display: table-row;
+}
+.txt{
+   text-align: left;
+   font-size: .75em;
+}
+.price{
+  text-align: right;
+  color: #000;
+  /* font-weight: bold; */
+}
+@media screen and (max-width: 600px) {
+  table{width: 100%;}
 }
 
-table th products{
-  width: 75%;
+.more {
+  border: none;  /* 枠線を消す */
+  outline: none; /* クリックしたときに表示される枠線を消す */
+  background: transparent; /* 背景の灰色を消す */
+  color: rgb(86, 89, 89);
+  cursor:pointer;
 }
-
-table th products{
-  width: 25%;
-}
-
-p{
-  color: #565959;
+.button_wrapper{
+   text-align:center;
 }
 
 /* ロード中 */
