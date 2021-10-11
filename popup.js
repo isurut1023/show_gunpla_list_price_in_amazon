@@ -95,6 +95,7 @@ function search_insert(text){
   // 名前を分解、リスト化
   names = text.split(' ')
   // 名前に "()" 含む場合は、"()" とその中の文字列を除外したものを追加
+  // TODO: 記号のみのものは除外
   for (const n of names) {
     if (n.match(/\(.+\)/g)) {
       names.push(n.replace(/\(.+\)/g, ''))
@@ -153,20 +154,15 @@ function search_insert(text){
     var result = search.filter(function(item, index){
       if ((item.name).indexOf(name) >= 0) return true;
     });
-    if (result.length) {
-      results.push(result);
+    // console.log('name:',name,'result:',result)
+    if (result.length > 0) {
+      console.log('name:',name,'result:',result)
+      results = results.concat(result);
     }
   }
   console.log("search by name:", results)
 
-  // 各名前要素の検索結果から検索数が20以上のものは除外した上で少ない順にソートし上位１０件を選出する。
-  // 20というしきい値は仮
-  for (const r of results) {
-    if ( r.length >= 20 ) {
-      var index = results.indexOf(r);
-      results.splice(index, 1)
-    }
-  }
+  // 各名前要素の検索結果から少ない順にソートし上位１０件を選出する。
   results = results.sort()
   result  = []
   console.log("Sort by length:", results)
@@ -186,7 +182,6 @@ function search_insert(text){
   bandai_hobby_url = "https://bandai-hobby.net/item/"
   p_bandai_url = "https://p-bandai.jp/item/item-"
   for (const r of result) {
-    console.log(r)
     if (r["no"] != "") {
       url = bandai_hobby_url + r['no'] + '/'
     }else if (r["no"] == "") {
