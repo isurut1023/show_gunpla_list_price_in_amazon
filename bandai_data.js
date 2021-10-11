@@ -3645,7 +3645,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "BB戦士 265 少年武者烈丸(ショウネンムシャレツマル)",
@@ -3961,7 +3962,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000136426",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "BB戦士 273 ガンダムRX-78NT-1",
@@ -4675,7 +4677,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "MG 1/100 百式+バリュートシステム",
@@ -5387,7 +5390,8 @@ const bandai_data_json = {
       "name": "1 ブラック",
       "model": "",
       "series": [],
-      "no": "0700"
+      "no": "0700",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 ジム・ストライカー",
@@ -5457,7 +5461,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000149850",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "HGUC 1/144 ギャプラン TR-5[フライルー]",
@@ -5683,7 +5688,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HGUC 1/144 ユニコーンガンダム デストロイモード",
@@ -5699,7 +5705,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000144754",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 ユニコーンガンダム ユニコーンモード",
@@ -5717,7 +5724,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "HGUC 1/144 ギラ・ズール",
@@ -5805,7 +5813,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "MG 1/100 ユニコーンガンダム HDカラー+MS CAGE",
@@ -5881,7 +5890,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "HGUC 1/144 シナンジュ",
@@ -6081,7 +6091,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "SDガンダム三国伝 046 真 翔烈帝 龍装 劉備ガンダム・天玉鎧 蒼龍",
@@ -6421,7 +6432,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0793"
+      "no": "0793",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 ユニコーンガンダム2号機 バンシィ(デストロイモード)",
@@ -6439,7 +6451,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HGUC 1/144 ユニコーンガンダム2号機 バンシィ(ユニコーンモード)",
@@ -6559,7 +6572,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムSEED"
       ],
-      "no": "0805"
+      "no": "0805",
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "Bトレインショーティー 185系・EXPRESS185色",
@@ -6587,7 +6601,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "Bトレインショーティー 近鉄3220系",
@@ -6619,7 +6634,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0810"
+      "no": "0810",
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HGUC 1/144 マラサイ(ユニコーンVer.)",
@@ -6631,7 +6647,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0811"
+      "no": "0811",
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "HGUC 1/144 ザクI・スナイパータイプ(ヨンム・カークス機)",
@@ -6643,7 +6660,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0812"
+      "no": "0812",
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "ワンピース偉大なる船(グランドシップ)コレクション ゴーイング・メリー号",
@@ -6943,7 +6961,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HGUC 1/144 ローゼン・ズール",
@@ -7018,7 +7037,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "MG 1/100 MSN-06S シナンジュ・スタイン Ver.Ka",
@@ -7144,7 +7164,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0854"
+      "no": "0854",
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "HG 1/144 ガンダムAGE-1 フルグランサ",
@@ -7865,7 +7886,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0932"
+      "no": "0932",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "1/144 ヴァルヴレイヴI 火人 イノセントゼロ",
@@ -9054,7 +9076,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 V2ガンダム",
@@ -9072,7 +9095,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "MG 1/100 ビルドストライクガンダム フルパッケージ",
@@ -11194,7 +11218,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "メカコレクション宇宙戦艦ヤマト2199 No.11 ドメラーズIII世",
@@ -12476,7 +12501,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "ビルダーズパーツHD-35 ノンスケール MSバーニア03",
@@ -13409,7 +13435,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HG 1/144 MSオプションセット1 & CGSモビルワーカー",
@@ -14020,7 +14047,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "妖怪ウォッチ USAピョン エンペラーモード",
@@ -14050,7 +14078,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "キャラスタンドプレート ガエリオ・ボードウィン",
@@ -14463,7 +14492,8 @@ const bandai_data_json = {
         "機動戦士ガンダム 鉄血のオルフェンズ",
         "鉄血のオルフェンズ HG"
       ],
-      "no": "1466"
+      "no": "1466",
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "メカコレクション ウルトラマンシリーズNo.03 特殊潜航艇S号",
@@ -15030,7 +15060,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000139364",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "キャラスタンドプレート アトラ・ミクスタ",
@@ -17407,7 +17438,8 @@ const bandai_data_json = {
         "機動戦士ガンダム 鉄血のオルフェンズ",
         "鉄血のオルフェンズ HG"
       ],
-      "no": "1709"
+      "no": "1709",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "Bトレインショーティー 20系客車 Aセット",
@@ -18075,7 +18107,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "HGPG 1/144 プチッガイ プリティインピンク&プチプチッガイ",
@@ -18130,7 +18163,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "HG 1/144 MSオプションセット9",
@@ -18234,7 +18268,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムSEED"
       ],
-      "no": "1773"
+      "no": "1773",
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "HG 1/144 アトラスガンダム(GUNDAM THUNDERBOLT Ver.)",
@@ -20808,7 +20843,8 @@ const bandai_data_json = {
       "name": "ガンダムAN-01 トリスタン",
       "model": "",
       "series": [],
-      "no": "1948"
+      "no": "1948",
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "1/72 VF-31J改 ジークフリード (ハヤテ機) デカルチャーVer.",
@@ -21114,7 +21150,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
       ],
-      "no": "1971"
+      "no": "1971",
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "ガンダムデカール No.104 機動戦士ガンダム 鉄血のオルフェンズ汎用2",
@@ -21126,7 +21163,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
       ],
-      "no": "1972"
+      "no": "1972",
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "ガンダムデカール No.105 HG 1/144 機動戦士ガンダム THE ORIGIN汎用1",
@@ -21162,7 +21200,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "1975"
+      "no": "1975",
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "ガンダムデカール No.108 機動戦士Zガンダム/機動戦士ガンダムZZ汎用1",
@@ -21747,7 +21786,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "2017"
+      "no": "2017",
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "RG 1/144 ユニコーンガンダム[プレミアム”ユニコーンモード”ボックス]",
@@ -22877,7 +22917,8 @@ const bandai_data_json = {
       "name": "バンダイプラモデル 4 クリア",
       "model": "",
       "series": [],
-      "no": "2100"
+      "no": "2100",
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "バンダイプラモデル アクションベース4 ブラック",
@@ -24401,7 +24442,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "2222"
+      "no": "2222",
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "メカコレクション 仮面ライダーシリーズ 新サイクロン号&仮面ライダー新2号",
@@ -25320,7 +25362,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "SDガンダム クロスシルエット クロスシルエットフレーム[ホワイト]",
@@ -25967,7 +26010,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HGBD 1/144 ガンダムダブルオースカイ",
@@ -28429,7 +28473,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "MG 1/100 真武者頑駄無",
@@ -28515,7 +28560,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "BB戦士 318 翔烈帝(ショウレツテイ) 劉備(リュウビ)ガンダム",
@@ -29431,7 +29477,8 @@ const bandai_data_json = {
       "series": [
         "新機動戦記ガンダムWシリーズ"
       ],
-      "no": "2715"
+      "no": "2715",
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "MG 1/100 XXXG-01S シェンロンガンダム EW",
@@ -29586,7 +29633,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 ドラッツェ",
@@ -29618,7 +29666,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000150030",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "MG 1/100 デュエルガンダム アサルトシュラウド",
@@ -32937,7 +32986,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダム00[ダブルオー]"
       ],
-      "no": "3006"
+      "no": "3006",
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "1/1000 地球連邦アンドロメダ級DX",
@@ -33392,7 +33442,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 グスタフ・カール(ユニコーンVer.)",
@@ -34395,7 +34446,8 @@ const bandai_data_json = {
       "series": [
         "ガンダム・センチネル"
       ],
-      "no": "3124"
+      "no": "3124",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGAC 1/144 マグアナック",
@@ -35257,7 +35309,8 @@ const bandai_data_json = {
       "name": "陸戦型ガンダム",
       "model": "",
       "series": [],
-      "no": "3194"
+      "no": "3194",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "SDガンダム クロスシルエット シルエットブースター[ホワイト]",
@@ -39356,7 +39409,8 @@ const bandai_data_json = {
       "series": [
         "ガンダム・センチネル"
       ],
-      "no": "3508"
+      "no": "3508",
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "Figure-rise Standard 1/12 ULTRAMAN SUIT TIGA",
@@ -41367,7 +41421,8 @@ const bandai_data_json = {
       "name": "フェニックスガンダム",
       "model": "",
       "series": [],
-      "no": "3741"
+      "no": "3741",
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HG 1/144 メッサーF01型",
@@ -46831,7 +46886,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000156724",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "30MM 1/144 オプションパーツセット4(戦国アーマー)",
@@ -48661,7 +48717,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムSEED"
       ],
-      "no": "4474"
+      "no": "4474",
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "RG 1/144 Hi-νガンダム",
@@ -50114,7 +50171,8 @@ const bandai_data_json = {
         "機動戦士ガンダム 鉄血のオルフェンズ",
         "鉄血のオルフェンズ HG"
       ],
-      "no": "4597"
+      "no": "4597",
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "SDW HEROES クレオパトラキュベレイ ダークマスクVer.",
@@ -57833,7 +57891,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000150019",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "MG 1/100 RX-78-2ガンダム Ver.2.0 リアルタイプカラー",

@@ -60,6 +60,11 @@ table tbody th {
   color: #000;
   /* font-weight: bold; */
 }
+.reshipment_data{
+  text-align: center;
+  color: #000;
+  /* font-weight: bold; */
+}
 @media screen and (max-width: 600px) {
   table{width: 100%;}
 }

@@ -8,11 +8,7 @@ if (document.getElementById("getBandaiPrice") !== null){
   }
 }
 
-chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
-  // Amazon 商品ページからタイトルを取得
-  var tag_title = tabs[0]['title'];
-  console.log('tag_title : ', tag_title);
-
+function search_insert(text){
   // 全角英数記号スペースを半角化
   function toHalfWidth(strVal){
     // 半角変換
@@ -24,16 +20,16 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
     ).replace(/　/g," ");
     return halfVal;
   }
-  tag_title = toHalfWidth(tag_title);
-  console.log('tag_title : ', tag_title);
+  text = toHalfWidth(text);
+  console.log('text : ', text);
 
   // bandai_data からシリーズのリストを取得
   var series = ''
   var seriess = bandai_data_json["series"].sort(function(a, b) {return b.length - a.length;});
   // title からシリーズを取得
   for (const s of seriess) {
-    if (tag_title.indexOf(s) >= 0) {
-      tag_title = tag_title.replace(s, "");
+    if (text.indexOf(s) >= 0) {
+      text = text.replace(s, "");
       series = s;
       break;
     }
@@ -50,8 +46,8 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   // title からブランドを取得
   getbrand: for (const b in brands) {
     for (const b_alias of brands[b]["alias"]) {
-      if (tag_title.indexOf(b_alias) >= 0) {
-        tag_title = tag_title.replace(b_alias, "");
+      if (text.indexOf(b_alias) >= 0) {
+        text = text.replace(b_alias, "");
         brand = b;
         break getbrand;
       }
@@ -64,8 +60,8 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   var scales = bandai_data_json["scale"];
   // title からスケールを取得
   for (const s of scales) {
-    if (tag_title.indexOf(s) >= 0) {
-      tag_title = tag_title.replace(s, "");
+    if (text.indexOf(s) >= 0) {
+      text = text.replace(s, "");
       scale = s;
       break;
     }
@@ -86,19 +82,19 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
     '中古'
   ];
   for (const v of removals) {
-    tag_title = tag_title.replace(v,'')
+    text = text.replace(v,'')
   }
-  // tag_title_split = tag_title_split.filter(function(v){
+  // text_split = text_split.filter(function(v){
   //   return ! removals.includes(v);
   // });
 
   // 連続する半角スペースを削除
-  tag_title = tag_title.replace(/^\s+|\s+$/g,'').replace(/ +/g,' ')
-  console.log('tag_title:', tag_title);
+  text = text.replace(/^\s+|\s+$/g,'').replace(/ +/g,' ')
+  console.log('text:', text);
 
   // 名前を分解、リスト化
-  names = tag_title.split(' ')
-  // 名前に "(hogehoge)" 含む場合は、"()" とその中の文字列を除外したものを追加
+  names = text.split(' ')
+  // 名前に "()" 含む場合は、"()" とその中の文字列を除外したものを追加
   // TODO: 記号のみのものは除外
   for (const n of names) {
     if (n.match(/\(.+\)/g)) {
@@ -199,24 +195,25 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
     }
   }
 
+  // 再出荷日の情報の有無を確認
+  reshipment_flag = ''
+  for (const r of result) {
+    if (r['reshipment_data'] != null) {
+      reshipment_flag = 1
+      break
+    }
+  }
+
   // HTML 生成
   console.log("create html")
   div = document.createElement("div");
   div.id = "getBandaiPrice";
-  // 見出しの作成
-  // hGunplaListPrice = document.createElement("h2");
-  // hGunplaListPrice.id = "gunplaListPrise"
-  // hGunplaListPriceText = document.createTextNode("ガンプラ定価情報");
-  // hGunplaListPrice.appendChild(hGunplaListPriceText)
-  // hGunplaListPrice.style.borderTop = "1px solid rgb(204, 204, 204)"
-  // 挿入
-  // element = document.getElementById('ppd');
-  // element.insertAdjacentElement('afterend', hGunplaListPrice);
+
   // テーブル
   tbl = document.createElement("table");
   tHead = document.createElement("thead");
   tblBody = document.createElement("tbody");
-  // テーブルヘッダー
+
   // テーブルヘッダー「商品名」
   row = document.createElement("tr");
   th1 = document.createElement("th");
@@ -224,26 +221,25 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   th1Text = document.createTextNode("関連商品（バンダイホビーサイト外部リンク）");
   th1.appendChild(th1Text)
   row.appendChild(th1)
+
   // テーブルヘッダー「価格」
   th2 = document.createElement("th");
   th2.className = "prices";
   th2Text = document.createTextNode("バンダイホビーサイト価格");
   th2.appendChild(th2Text)
   row.appendChild(th2)
+
+  // 再出荷日の情報があればテーブルヘッダー「再出荷日」を追加
+  if (reshipment_flag == 1) {
+    th3 = document.createElement("th");
+    th3.className = "reshipment_date";
+    th3Text = document.createTextNode("再出荷日");
+    th3.appendChild(th3Text)
+    row.appendChild(th3)
+  }
+
   // テーブルヘッダーの作成
   tHead.appendChild(row);
-  // テーブルの装飾
-  // tbl.style.borderCollapse = "collapse"
-  // tbl.style.minWidth       = "935px"
-  // tbl.style.maxWidth       = "960px"
-  // row.style.borderBottom   = "solid 1px #eee"
-  // row.style.cursor         = "pointer"
-  // th1.style.textAlign      = "left"
-  // th1.style.width          = "75%"
-  // th1.style.padding        = "15px 0"
-  // th2.style.textAlign      = "left"
-  // th2.style.width          = "25%"
-  // th2.style.padding        = "15px 0"
 
   // 検索結果から商品名、価格、リンクを取得
   i = 0
@@ -280,6 +276,18 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
     td2.appendChild(td2Text)
     row.appendChild(td2)
 
+    // カラム「再出荷日」
+    if (reshipment_flag == 1) {
+      if (r['reshipment_data'] == null) {
+        r['reshipment_data'] = '-'
+      }
+      td3 = document.createElement("td");
+      td3.className = "reshipment_data";
+      td3Text = document.createTextNode(r['reshipment_data']);
+      td3.appendChild(td3Text)
+      row.appendChild(td3)
+    }
+
     // 列の作成
     tblBody.appendChild(row);
   }
@@ -294,6 +302,7 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   // 列が８以上の場合は "read more" を追加・挿入
   if (tblBody.childElementCount > 8) {
     div_button = document.createElement("div");
+    div_button.id = "button_wrapper";
     div_button.className = "button_wrapper";
 
     button = document.createElement('button');
@@ -347,8 +356,9 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   //document.body.insertBefore(div, document.getElementById("content"));
 
   // ローディングを削除
-  loader = document.getElementById('loader');
-  loader.remove();
+  if (document.getElementById('loader') != null) {
+    document.getElementById('loader').remove();
+  }
 
 　// "read more" のアクション
   // 8列以上を表示・非表示を切り替える
@@ -362,4 +372,21 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
       $(this).text('< read more >');
     }
   });
+}
+
+chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
+  // Amazon 商品ページからタイトルを取得
+  var tag_title = tabs[0]['title'];
+  console.log('text : ', tag_title);
+
+  search_insert(tag_title)
+
+  // document.getElementById('button_search').addEventListener('click', function() {
+  //   let search_text = document.getElementById('searchText').value
+  //   alert(search_text)
+  //   document.getElementById('getBandaiPrice').remove();
+  //   document.getElementById('button_wrapper').remove();
+  //   document.getElementById('attention').remove();
+  //   search_insert(search_text);
+  // });
 });
