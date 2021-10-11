@@ -57,7 +57,8 @@ const bandai_data_json = {
     },
     "ENTRY GRADE": {
       "alias": [
-        "ENTRY GRADE"
+        "ENTRY GRADE",
+        "EG"
       ],
       "series": [],
       "default_scale": ""
@@ -188,6 +189,13 @@ const bandai_data_json = {
       ],
       "default_scale": "1/144"
     },
+    "AG［アドバンスドグレード］": {
+      "alias": [
+        "AG[アドバンスドグレード]",
+        "AG"
+      ],
+      "default_scale": "1/144"
+    },
     "SDEXスタンダード": {
       "alias": [
         "SDEXスタンダード"
@@ -197,12 +205,13 @@ const bandai_data_json = {
     },
     "SDガンダム クロスシルエット": {
       "alias": [
-        "SDガンダム クロスシルエット"
+        "SDガンダム クロスシルエット",
+        "SDガンダムクロスシルエット"
       ],
       "series": [],
       "default_scale": ""
     },
-    "SDガンダムBB戦士 LEGENDBB": {
+    "SDガンダム BB戦士 LEGENDBB": {
       "alias": [
         "BB戦士 LEGENDBB",
         "LEGEND BB",
@@ -211,7 +220,7 @@ const bandai_data_json = {
       "series": [],
       "default_scale": ""
     },
-    "SDガンダムBB戦士": {
+    "SDガンダム BB戦士": {
       "alias": [
         "ブレイブバトルウォーリアーズ",
         "SDガンダムBB戦士",
@@ -247,7 +256,8 @@ const bandai_data_json = {
     },
     "SDクロスシルエット": {
       "alias": [
-        "SDクロスシルエット"
+        "SDクロスシルエット",
+        "SDCS"
       ],
       "series": [],
       "default_scale": ""
@@ -388,6 +398,13 @@ const bandai_data_json = {
       ],
       "series": [],
       "default_scale": "1/48"
+    },
+    "キャラスタンドプレート": {
+      "alias": [
+        "キャラスタンドプレート"
+      ],
+      "series": [],
+      "default_scale": ""
     }
   },
   "scale": [
@@ -3619,7 +3636,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "BB戦士 265 少年武者烈丸(ショウネンムシャレツマル)",
@@ -3864,7 +3882,7 @@ const bandai_data_json = {
       "price": "4,180円（税込）",
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
-      "name": "ウイングガンダムゼロ(エンドレスワルツ版)",
+      "name": "ウイングガンダムゼロ EW",
       "model": "",
       "series": [
         "新機動戦記ガンダムWシリーズ"
@@ -3935,7 +3953,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000136426",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "BB戦士 273 ガンダムRX-78NT-1",
@@ -4649,7 +4668,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "MG 1/100 百式+バリュートシステム",
@@ -5361,7 +5381,8 @@ const bandai_data_json = {
       "name": "1 ブラック",
       "model": "",
       "series": [],
-      "no": "0700"
+      "no": "0700",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 ジム・ストライカー",
@@ -5431,7 +5452,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000149850",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "HGUC 1/144 ギャプラン TR-5[フライルー]",
@@ -5657,7 +5679,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HGUC 1/144 ユニコーンガンダム デストロイモード",
@@ -5673,7 +5696,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000144754",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 ユニコーンガンダム ユニコーンモード",
@@ -5691,7 +5715,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "HGUC 1/144 ギラ・ズール",
@@ -5779,7 +5804,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "MG 1/100 ユニコーンガンダム HDカラー+MS CAGE",
@@ -5855,7 +5881,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "HGUC 1/144 シナンジュ",
@@ -6055,7 +6082,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "SDガンダム三国伝 046 真 翔烈帝 龍装 劉備ガンダム・天玉鎧 蒼龍",
@@ -6350,9 +6378,9 @@ const bandai_data_json = {
     {
       "product": "AG 1/144 ガンダムAGE-1タイタス",
       "price": "660円（税込）",
-      "brand": "",
+      "brand": "AG［アドバンスドグレード］",
       "scale": "1/144",
-      "name": "AG ガンダムタイタス",
+      "name": "ガンダムタイタス",
       "model": "AGE-1",
       "series": [],
       "no": "0790"
@@ -6395,7 +6423,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0793"
+      "no": "0793",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 ユニコーンガンダム2号機 バンシィ(デストロイモード)",
@@ -6413,7 +6442,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HGUC 1/144 ユニコーンガンダム2号機 バンシィ(ユニコーンモード)",
@@ -6533,7 +6563,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムSEED"
       ],
-      "no": "0805"
+      "no": "0805",
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "Bトレインショーティー 185系・EXPRESS185色",
@@ -6561,7 +6592,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "Bトレインショーティー 近鉄3220系",
@@ -6593,7 +6625,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0810"
+      "no": "0810",
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HGUC 1/144 マラサイ(ユニコーンVer.)",
@@ -6605,7 +6638,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0811"
+      "no": "0811",
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "HGUC 1/144 ザクI・スナイパータイプ(ヨンム・カークス機)",
@@ -6617,7 +6651,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0812"
+      "no": "0812",
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "ワンピース偉大なる船(グランドシップ)コレクション ゴーイング・メリー号",
@@ -6710,9 +6745,9 @@ const bandai_data_json = {
     {
       "product": "AG 1/144 Gエグゼスジャックエッジ",
       "price": "770円（税込）",
-      "brand": "",
+      "brand": "AG［アドバンスドグレード］",
       "scale": "1/144",
-      "name": "AG Gエグゼスジャックエッジ",
+      "name": "Gエグゼスジャックエッジ",
       "model": "",
       "series": [],
       "no": "0819"
@@ -6748,7 +6783,7 @@ const bandai_data_json = {
     {
       "product": "リアルSDガンダム BB戦士372 ガンダムAGE-3(ノーマル フォートレス オービタル)",
       "price": "1,320円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "リアルSDガンダム 372 ガンダム(ノーマル フォートレス オービタル)",
       "model": "AGE-3",
@@ -6917,7 +6952,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HGUC 1/144 ローゼン・ズール",
@@ -6992,7 +7028,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "MG 1/100 MSN-06S シナンジュ・スタイン Ver.Ka",
@@ -7118,7 +7155,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0854"
+      "no": "0854",
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "HG 1/144 ガンダムAGE-1 フルグランサ",
@@ -7839,7 +7877,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "0932"
+      "no": "0932",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "1/144 ヴァルヴレイヴI 火人 イノセントゼロ",
@@ -9028,7 +9067,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 V2ガンダム",
@@ -9046,7 +9086,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "MG 1/100 ビルドストライクガンダム フルパッケージ",
@@ -9341,7 +9382,7 @@ const bandai_data_json = {
     {
       "product": "リアルSDガンダム BB戦士388 ビルドストライクガンダム フルパッケージ",
       "price": "660円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "リアルSDガンダム 388 ビルドストライクガンダム フルパッケージ",
       "model": "",
@@ -10837,9 +10878,9 @@ const bandai_data_json = {
     {
       "product": "SD武者ガンダム BB戦士395 LEGEND BB 二代目頑駄無大将軍",
       "price": "1,650円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "ENTRY GRADE",
       "scale": "",
-      "name": "SD武者ガンダム BB戦士395 二代目頑駄無大将軍",
+      "name": "SD武者ガンダム BB戦士395 LEND BB 二代目頑駄無大将軍",
       "model": "",
       "series": [],
       "no": "1187"
@@ -11168,7 +11209,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "メカコレクション宇宙戦艦ヤマト2199 No.11 ドメラーズIII世",
@@ -11504,11 +11546,7 @@ const bandai_data_json = {
       "name": "武者飛駆鳥",
       "model": "",
       "series": [],
-      "no": "1240",
-      "p-bandai": {
-        "no": "1000157156",
-        "tag": []
-      }
+      "no": "1240"
     },
     {
       "product": "HG 1/144 宇宙用ジャハナム(クリム・ニック専用機)",
@@ -12109,7 +12147,7 @@ const bandai_data_json = {
     {
       "product": "リアルSDガンダム BB戦士398 ライトニングガンダム",
       "price": "660円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "リアルSDガンダム 398 ライトニングガンダム",
       "model": "",
@@ -12454,7 +12492,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "ビルダーズパーツHD-35 ノンスケール MSバーニア03",
@@ -13129,13 +13168,7 @@ const bandai_data_json = {
       "name": "バーサル騎士ガンダム",
       "model": "",
       "series": [],
-      "no": "1365",
-      "p-bandai": {
-        "no": "1000146602",
-        "tag": [
-          "ITEM_OUT_OF_STOCK"
-        ]
-      }
+      "no": "1365"
     },
     {
       "product": "1/12 サンドトルーパー",
@@ -13393,7 +13426,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HG 1/144 MSオプションセット1 & CGSモビルワーカー",
@@ -13888,9 +13922,9 @@ const bandai_data_json = {
     {
       "product": "キャラスタンドプレート 三日月・オーガス",
       "price": "550円（税込）",
-      "brand": "",
+      "brand": "キャラスタンドプレート",
       "scale": "",
-      "name": "キャラスタンドプレート 三日月・オーガス",
+      "name": "三日月・オーガス",
       "model": "",
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
@@ -13900,9 +13934,9 @@ const bandai_data_json = {
     {
       "product": "キャラスタンドプレート オルガ・イツカ",
       "price": "550円（税込）",
-      "brand": "",
+      "brand": "キャラスタンドプレート",
       "scale": "",
-      "name": "キャラスタンドプレート オルガ・イツカ",
+      "name": "オルガ・イツカ",
       "model": "",
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
@@ -14004,7 +14038,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "妖怪ウォッチ USAピョン エンペラーモード",
@@ -14034,14 +14069,15 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "キャラスタンドプレート ガエリオ・ボードウィン",
       "price": "550円（税込）",
-      "brand": "",
+      "brand": "キャラスタンドプレート",
       "scale": "",
-      "name": "キャラスタンドプレート ガエリオ・ボードウィン",
+      "name": "ガエリオ・ボードウィン",
       "model": "",
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
@@ -14335,9 +14371,9 @@ const bandai_data_json = {
     {
       "product": "キャラスタンドプレート マクギリス・ファリド",
       "price": "550円（税込）",
-      "brand": "",
+      "brand": "キャラスタンドプレート",
       "scale": "",
-      "name": "キャラスタンドプレート マクギリス・ファリド",
+      "name": "マクギリス・ファリド",
       "model": "",
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
@@ -14447,7 +14483,8 @@ const bandai_data_json = {
         "機動戦士ガンダム 鉄血のオルフェンズ",
         "鉄血のオルフェンズ HG"
       ],
-      "no": "1466"
+      "no": "1466",
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "メカコレクション ウルトラマンシリーズNo.03 特殊潜航艇S号",
@@ -14707,9 +14744,9 @@ const bandai_data_json = {
     {
       "product": "キャラスタンドプレート クーデリア・藍那・バーンスタイン",
       "price": "550円（税込）",
-      "brand": "",
+      "brand": "キャラスタンドプレート",
       "scale": "",
-      "name": "キャラスタンドプレート クーデリア・藍那・バーンスタイン",
+      "name": "クーデリア・藍那・バーンスタイン",
       "model": "",
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
@@ -15014,14 +15051,15 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000139364",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "キャラスタンドプレート アトラ・ミクスタ",
       "price": "550円（税込）",
-      "brand": "",
+      "brand": "キャラスタンドプレート",
       "scale": "",
-      "name": "キャラスタンドプレート アトラ・ミクスタ",
+      "name": "アトラ・ミクスタ",
       "model": "",
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
@@ -15116,13 +15154,7 @@ const bandai_data_json = {
       "name": "騎士スペリオルドラゴン",
       "model": "",
       "series": [],
-      "no": "1518",
-      "p-bandai": {
-        "no": "1000146606",
-        "tag": [
-          "ITEM_OUT_OF_STOCK"
-        ]
-      }
+      "no": "1518"
     },
     {
       "product": "1/72 Aウイング・スターファイター",
@@ -15563,11 +15595,11 @@ const bandai_data_json = {
       "no": "1554"
     },
     {
-      "product": "SDEXスタンダード002 エールストライクガンダム",
+      "product": "SDEXスタンダード 002 エールストライクガンダム",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "002 エールストライクガンダム",
+      "name": "エールストライクガンダム",
       "model": "",
       "series": [
         "機動戦士ガンダムSEED"
@@ -15575,23 +15607,23 @@ const bandai_data_json = {
       "no": "1555"
     },
     {
-      "product": "SDEXスタンダード001 RX-78-2 ガンダム",
+      "product": "SDEXスタンダード 001 RX-78-2 ガンダム",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "001 ガンダム",
-      "model": "RX-78-2",
+      "name": "RX-78-2 ガンダム",
+      "model": "",
       "series": [
         "機動戦士ガンダム"
       ],
       "no": "1556"
     },
     {
-      "product": "SDEXスタンダード003 ガンダムエクシア",
+      "product": "SDEXスタンダード 003 ガンダムエクシア",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "003 ガンダムエクシア",
+      "name": "ガンダムエクシア",
       "model": "",
       "series": [
         "機動戦士ガンダム00[ダブルオー]"
@@ -15599,11 +15631,11 @@ const bandai_data_json = {
       "no": "1557"
     },
     {
-      "product": "SDEXスタンダード004 ウイングガンダムゼロ EW",
+      "product": "SDEXスタンダード 004 ウイングガンダムゼロ EW",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "004 ウイングガンダムゼロ EW",
+      "name": "ウイングガンダムゼロ EW",
       "model": "",
       "series": [
         "新機動戦記ガンダムWシリーズ"
@@ -15611,11 +15643,11 @@ const bandai_data_json = {
       "no": "1558"
     },
     {
-      "product": "SDEXスタンダード005 ユニコーンガンダム(デストロイモード)",
+      "product": "SDEXスタンダード 005 ユニコーンガンダム(デストロイモード)",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "005 ユニコーンガンダム(デストロイモード)",
+      "name": "ユニコーンガンダム(デストロイモード)",
       "model": "",
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
@@ -15623,11 +15655,11 @@ const bandai_data_json = {
       "no": "1559"
     },
     {
-      "product": "SDEXスタンダード006 ストライクフリーダムガンダム",
+      "product": "SDEXスタンダード 006 ストライクフリーダムガンダム",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "006 ストライクフリーダムガンダム",
+      "name": "ストライクフリーダムガンダム",
       "model": "",
       "series": [
         "機動戦士ガンダムSEED DESTINY"
@@ -15635,11 +15667,11 @@ const bandai_data_json = {
       "no": "1560"
     },
     {
-      "product": "SDEXスタンダード007 ガンダムアストレイ レッドフレーム",
+      "product": "SDEXスタンダード 007 ガンダムアストレイ レッドフレーム",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "007 ガンダムアストレイ レッドフレーム",
+      "name": "ガンダムアストレイ レッドフレーム",
       "model": "",
       "series": [
         "機動戦士ガンダムSEED"
@@ -15647,11 +15679,11 @@ const bandai_data_json = {
       "no": "1561"
     },
     {
-      "product": "SDEXスタンダード008 ダブルオーガンダム",
+      "product": "SDEXスタンダード 008 ダブルオーガンダム",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "008 ダブルオーガンダム",
+      "name": "ダブルオーガンダム",
       "model": "",
       "series": [
         "機動戦士ガンダム00[ダブルオー]"
@@ -16317,7 +16349,7 @@ const bandai_data_json = {
     {
       "product": "BB戦士 No.401 ガンダムバルバトス DX",
       "price": "1,320円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "No.401 ガンダムバルバトス DX",
       "model": "",
@@ -16540,9 +16572,9 @@ const bandai_data_json = {
     {
       "product": "キャラスタンドプレート ホシノ・フミナ",
       "price": "550円（税込）",
-      "brand": "",
+      "brand": "キャラスタンドプレート",
       "scale": "",
-      "name": "キャラスタンドプレート ホシノ・フミナ",
+      "name": "ホシノ・フミナ",
       "model": "",
       "series": [],
       "no": "1641"
@@ -17397,7 +17429,8 @@ const bandai_data_json = {
         "機動戦士ガンダム 鉄血のオルフェンズ",
         "鉄血のオルフェンズ HG"
       ],
-      "no": "1709"
+      "no": "1709",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "Bトレインショーティー 20系客車 Aセット",
@@ -17679,7 +17712,7 @@ const bandai_data_json = {
     {
       "product": "BB戦士 No.402 ガンダムバルバトスルプスDX",
       "price": "1,320円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "No.402 ガンダムバルバトスルプスDX",
       "model": "",
@@ -18065,7 +18098,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "HGPG 1/144 プチッガイ プリティインピンク&プチプチッガイ",
@@ -18120,7 +18154,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "HG 1/144 MSオプションセット9",
@@ -18224,7 +18259,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムSEED"
       ],
-      "no": "1773"
+      "no": "1773",
+      "reshipment_data": "2021/10/21"
     },
     {
       "product": "HG 1/144 アトラスガンダム(GUNDAM THUNDERBOLT Ver.)",
@@ -18617,11 +18653,11 @@ const bandai_data_json = {
       }
     },
     {
-      "product": "SDEXスタンダード015 ユニコーンガンダム2号機バンシィ・ノルン(デストロイ・モード)",
+      "product": "SDEXスタンダード 015 ユニコーンガンダム2号機バンシィ・ノルン(デストロイ・モード)",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "015 ユニコーンガンダム2号機バンシィ・ノルン(デストロイ・モード)",
+      "name": "ユニコーンガンダム2号機バンシィ・ノルン(デストロイ・モード)",
       "model": "",
       "series": [],
       "no": "1798"
@@ -18792,31 +18828,31 @@ const bandai_data_json = {
       "no": "1814"
     },
     {
-      "product": "SDEXスタンダード009 デスティニーガンダム",
+      "product": "SDEXスタンダード 009 デスティニーガンダム",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "009 デスティニーガンダム",
+      "name": "デスティニーガンダム",
       "model": "",
       "series": [],
       "no": "1815"
     },
     {
-      "product": "SDEXスタンダード012 ガンダムデスサイズヘルEW",
+      "product": "SDEXスタンダード 012 ガンダムデスサイズヘルEW",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "012 ガンダムデスサイズヘルEW",
+      "name": "ガンダムデスサイズヘルEW",
       "model": "",
       "series": [],
       "no": "1816"
     },
     {
-      "product": "SDEXスタンダード011 トライバーニングガンダム",
+      "product": "SDEXスタンダード 011 トライバーニングガンダム",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "011 トライバーニングガンダム",
+      "name": "トライバーニングガンダム",
       "model": "",
       "series": [],
       "no": "1817"
@@ -20627,9 +20663,9 @@ const bandai_data_json = {
     {
       "product": "BB戦士 No.403 LEGENDBB 真駆参大将軍",
       "price": "1,980円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
-      "name": "BB戦士 No.403 真駆参大将軍",
+      "name": "No.403 LEGENDBB 真駆参大将軍",
       "model": "",
       "series": [],
       "no": "1936"
@@ -20798,7 +20834,8 @@ const bandai_data_json = {
       "name": "ガンダムAN-01 トリスタン",
       "model": "",
       "series": [],
-      "no": "1948"
+      "no": "1948",
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "1/72 VF-31J改 ジークフリード (ハヤテ機) デカルチャーVer.",
@@ -21104,7 +21141,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
       ],
-      "no": "1971"
+      "no": "1971",
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "ガンダムデカール No.104 機動戦士ガンダム 鉄血のオルフェンズ汎用2",
@@ -21116,7 +21154,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
       ],
-      "no": "1972"
+      "no": "1972",
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "ガンダムデカール No.105 HG 1/144 機動戦士ガンダム THE ORIGIN汎用1",
@@ -21152,7 +21191,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "1975"
+      "no": "1975",
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "ガンダムデカール No.108 機動戦士Zガンダム/機動戦士ガンダムZZ汎用1",
@@ -21607,7 +21647,7 @@ const bandai_data_json = {
     {
       "product": "LEGEND BB ガンダムベース限定 騎士スペリオルドラゴン[クリアカラー]",
       "price": "1,650円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "ガンダムベース限定 騎士スペリオルドラゴン[クリアカラー]",
       "model": "",
@@ -21737,7 +21777,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "2017"
+      "no": "2017",
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "RG 1/144 ユニコーンガンダム[プレミアム”ユニコーンモード”ボックス]",
@@ -22201,7 +22242,7 @@ const bandai_data_json = {
     {
       "product": "LEGENDBB バーサル騎士ガンダム[メタリック]",
       "price": "3,300円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "バーサル騎士ガンダム[メタリック]",
       "model": "",
@@ -22667,7 +22708,7 @@ const bandai_data_json = {
     {
       "product": "LEGENDBB 武者頑駄無真悪参",
       "price": "1,430円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "武者頑駄無真悪参",
       "model": "",
@@ -22867,7 +22908,8 @@ const bandai_data_json = {
       "name": "バンダイプラモデル 4 クリア",
       "model": "",
       "series": [],
-      "no": "2100"
+      "no": "2100",
+      "reshipment_data": "2021/10/07"
     },
     {
       "product": "バンダイプラモデル アクションベース4 ブラック",
@@ -23554,7 +23596,7 @@ const bandai_data_json = {
     {
       "product": "LEGENDBB 真駆参大将軍&新世将頑駄無 (超鋼Ver.)",
       "price": "5,060円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "真駆参大将軍&新世将頑駄無 (超鋼Ver.)",
       "model": "",
@@ -24391,7 +24433,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムUC[ユニコーン]"
       ],
-      "no": "2222"
+      "no": "2222",
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "メカコレクション 仮面ライダーシリーズ 新サイクロン号&仮面ライダー新2号",
@@ -25310,7 +25353,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "SDガンダム クロスシルエット クロスシルエットフレーム[ホワイト]",
@@ -25957,7 +26001,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HGBD 1/144 ガンダムダブルオースカイ",
@@ -28419,7 +28464,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "MG 1/100 真武者頑駄無",
@@ -28505,7 +28551,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "BB戦士 318 翔烈帝(ショウレツテイ) 劉備(リュウビ)ガンダム",
@@ -29421,7 +29468,8 @@ const bandai_data_json = {
       "series": [
         "新機動戦記ガンダムWシリーズ"
       ],
-      "no": "2715"
+      "no": "2715",
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "MG 1/100 XXXG-01S シェンロンガンダム EW",
@@ -29576,7 +29624,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 ドラッツェ",
@@ -29608,7 +29657,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000150030",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "MG 1/100 デュエルガンダム アサルトシュラウド",
@@ -29636,13 +29686,7 @@ const bandai_data_json = {
       "name": "騎士ガンダム",
       "model": "",
       "series": [],
-      "no": "2729",
-      "p-bandai": {
-        "no": "1000146596",
-        "tag": [
-          "ITEM_OUT_OF_STOCK"
-        ]
-      }
+      "no": "2729"
     },
     {
       "product": "MG 1/100 RMS-108 マラサイ",
@@ -29688,13 +29732,7 @@ const bandai_data_json = {
       "name": "武者頑駄無",
       "model": "",
       "series": [],
-      "no": "2732",
-      "p-bandai": {
-        "no": "1000146597",
-        "tag": [
-          "ITEM_OUT_OF_STOCK"
-        ]
-      }
+      "no": "2732"
     },
     {
       "product": "MG 1/100 バスターガンダム",
@@ -29722,13 +29760,7 @@ const bandai_data_json = {
       "name": "コマンドガンダム",
       "model": "",
       "series": [],
-      "no": "2734",
-      "p-bandai": {
-        "no": "1000146743",
-        "tag": [
-          "ITEM_OUT_OF_STOCK"
-        ]
-      }
+      "no": "2734"
     },
     {
       "product": "MG 1/100 イージスガンダム",
@@ -31102,7 +31134,7 @@ const bandai_data_json = {
     {
       "product": "LEGENDBB ガンダムベース限定 武者號斗丸(最終決戦Ver.) [クリアカラー]",
       "price": "1,650円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "ガンダムベース限定 武者號斗丸(最終決戦Ver.) [クリアカラー]",
       "model": "",
@@ -31343,7 +31375,7 @@ const bandai_data_json = {
     {
       "product": "BB戦士 ガンダムベース限定 フルアーマー・ユニコーンガンダム&ネオ・ジオング [クリアカラー]",
       "price": "4,070円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "ガンダムベース限定 フルアーマー・ユニコーンガンダム&ネオ・ジオング [クリアカラー]",
       "model": "",
@@ -31870,7 +31902,7 @@ const bandai_data_json = {
     {
       "product": "BB戦士 LEGENDBB 飛駆鳥大将軍",
       "price": "4,950円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "飛駆鳥大将軍",
       "model": "",
@@ -32945,7 +32977,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダム00[ダブルオー]"
       ],
-      "no": "3006"
+      "no": "3006",
+      "reshipment_data": "2021/10/18"
     },
     {
       "product": "1/1000 地球連邦アンドロメダ級DX",
@@ -33400,7 +33433,8 @@ const bandai_data_json = {
         "tag": [
           "ITEM_OUT_OF_STOCK"
         ]
-      }
+      },
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGUC 1/144 グスタフ・カール(ユニコーンVer.)",
@@ -34109,11 +34143,11 @@ const bandai_data_json = {
       "no": "3105"
     },
     {
-      "product": "SDEXスタンダード014 ガンダムバルバトスルプス",
+      "product": "SDEXスタンダード 014 ガンダムバルバトスルプス",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "014 ガンダムバルバトスルプス",
+      "name": "ガンダムバルバトスルプス",
       "model": "",
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
@@ -34403,7 +34437,8 @@ const bandai_data_json = {
       "series": [
         "ガンダム・センチネル"
       ],
-      "no": "3124"
+      "no": "3124",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "HGAC 1/144 マグアナック",
@@ -34608,9 +34643,9 @@ const bandai_data_json = {
     {
       "product": "BANDAI SPIRITS エントリーニッパー(ブルー)",
       "price": "715円（税込）",
-      "brand": "BANDAI SPIRITS ツール",
+      "brand": "",
       "scale": "",
-      "name": "エントリーニッパー(ブルー)",
+      "name": "BANDAI SPIRITS エントリーニッパー(ブルー)",
       "model": "",
       "series": [],
       "no": "3141"
@@ -34618,9 +34653,9 @@ const bandai_data_json = {
     {
       "product": "BANDAI SPIRITS エントリーニッパー(ホワイト)",
       "price": "715円（税込）",
-      "brand": "BANDAI SPIRITS ツール",
+      "brand": "",
       "scale": "",
-      "name": "エントリーニッパー(ホワイト)",
+      "name": "BANDAI SPIRITS エントリーニッパー(ホワイト)",
       "model": "",
       "series": [],
       "no": "3142"
@@ -34628,9 +34663,9 @@ const bandai_data_json = {
     {
       "product": "BANDAI SPIRITS エントリーニッパー(レッド)",
       "price": "715円（税込）",
-      "brand": "BANDAI SPIRITS ツール",
+      "brand": "",
       "scale": "",
-      "name": "エントリーニッパー(レッド)",
+      "name": "BANDAI SPIRITS エントリーニッパー(レッド)",
       "model": "",
       "series": [],
       "no": "3143"
@@ -35008,11 +35043,11 @@ const bandai_data_json = {
       "no": "3169"
     },
     {
-      "product": "SDEXスタンダード010 ガンダムバルバトス",
+      "product": "SDEXスタンダード 010 ガンダムバルバトス",
       "price": "660円（税込）",
       "brand": "SDEXスタンダード",
       "scale": "",
-      "name": "010 ガンダムバルバトス",
+      "name": "ガンダムバルバトス",
       "model": "",
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
@@ -35265,7 +35300,8 @@ const bandai_data_json = {
       "name": "陸戦型ガンダム",
       "model": "",
       "series": [],
-      "no": "3194"
+      "no": "3194",
+      "reshipment_data": "2021/10/25"
     },
     {
       "product": "SDガンダム クロスシルエット シルエットブースター[ホワイト]",
@@ -36127,7 +36163,7 @@ const bandai_data_json = {
     {
       "product": "BB戦士 ガンダムベース限定 Hi-νガンダム[スペシャルコーティング]",
       "price": "3,300円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "ガンダムベース限定 Hi-νガンダム[スペシャルコーティング]",
       "model": "",
@@ -37731,9 +37767,9 @@ const bandai_data_json = {
     {
       "product": "BANDAI SPIRITS ビルドアップニッパー",
       "price": "1,980円（税込）",
-      "brand": "BANDAI SPIRITS ツール",
+      "brand": "",
       "scale": "",
-      "name": "ビルドアップニッパー",
+      "name": "BANDAI SPIRITS ビルドアップニッパー",
       "model": "",
       "series": [],
       "no": "3384"
@@ -37856,7 +37892,7 @@ const bandai_data_json = {
     {
       "product": "BB戦士 LEGENDBB 新世大将軍【特典付】",
       "price": "4,730円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "新世大将軍【特典付】",
       "model": "",
@@ -38230,7 +38266,7 @@ const bandai_data_json = {
       "price": "1,100円（税込）",
       "brand": "SDガンダム クロスシルエット",
       "scale": "",
-      "name": "ウイングガンダムゼロEW",
+      "name": "ウイングガンダムゼロ EW",
       "model": "",
       "series": [
         "新機動戦記ガンダムWシリーズ"
@@ -39364,7 +39400,8 @@ const bandai_data_json = {
       "series": [
         "ガンダム・センチネル"
       ],
-      "no": "3508"
+      "no": "3508",
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "Figure-rise Standard 1/12 ULTRAMAN SUIT TIGA",
@@ -40121,7 +40158,7 @@ const bandai_data_json = {
     {
       "product": "BB戦士 ガンダムベース限定 ユニコーンガンダムペルフェクティビリティ",
       "price": "1,980円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "ガンダムベース限定 ユニコーンガンダムペルフェクティビリティ",
       "model": "",
@@ -40849,9 +40886,9 @@ const bandai_data_json = {
     {
       "product": "SDガンダムクロスシルエット ガンダムバルバトスルプスレクス",
       "price": "1,540円（税込）",
-      "brand": "SDガンダムシリーズ",
+      "brand": "SDガンダム クロスシルエット",
       "scale": "",
-      "name": "クロスシルエット ガンダムバルバトスルプスレクス",
+      "name": "ガンダムバルバトスルプスレクス",
       "model": "",
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
@@ -40981,7 +41018,7 @@ const bandai_data_json = {
     {
       "product": "LEGENDBB ガンダムベース限定 飛駆鳥大将軍 [クリアカラー]",
       "price": "5,500円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "ガンダムベース限定 飛駆鳥大将軍 [クリアカラー]",
       "model": "",
@@ -41030,7 +41067,7 @@ const bandai_data_json = {
     {
       "product": "BB戦士 五誇将(ごこしょう)ガンダム・龍輝宝(りゅうきほう)セット",
       "price": "3,850円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "五誇将(ごこしょう)ガンダム・龍輝宝(りゅうきほう)セット",
       "model": "",
@@ -41375,7 +41412,8 @@ const bandai_data_json = {
       "name": "フェニックスガンダム",
       "model": "",
       "series": [],
-      "no": "3741"
+      "no": "3741",
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "HG 1/144 メッサーF01型",
@@ -42036,9 +42074,9 @@ const bandai_data_json = {
     {
       "product": "SDガンダムクロスシルエット RX-78-2 ガンダム&シャア専用ザクII",
       "price": "1,980円（税込）",
-      "brand": "SDガンダムシリーズ",
+      "brand": "SDガンダム クロスシルエット",
       "scale": "",
-      "name": "クロスシルエット ガンダム&シャア専用ザクII",
+      "name": "ガンダム&シャア専用ザクII",
       "model": "RX-78-2",
       "series": [
         "機動戦士ガンダム"
@@ -42931,7 +42969,7 @@ const bandai_data_json = {
       "price": "33,000円（税込）",
       "brand": "PG［パーフェクトグレード］",
       "scale": "1/60",
-      "name": "ウイングガンダムゼロ(EW版)パールミラーコーティングVer.",
+      "name": "ウイングガンダムゼロ EW パールミラーコーティングVer.",
       "model": "",
       "series": [
         "新機動戦記ガンダムWシリーズ"
@@ -43780,7 +43818,7 @@ const bandai_data_json = {
       "price": "6,050円（税込）",
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
-      "name": "ウイングガンダムゼロEW Ver.Ka",
+      "name": "ウイングガンダムゼロ EW Ver.Ka",
       "model": "",
       "series": [
         "新機動戦記ガンダムWシリーズ"
@@ -44625,16 +44663,12 @@ const bandai_data_json = {
       "name": "武者號斗丸",
       "model": "",
       "series": [],
-      "no": "4027",
-      "p-bandai": {
-        "no": "1000157154",
-        "tag": []
-      }
+      "no": "4027"
     },
     {
       "product": "BB戦士 LEGENDBB 烈光頑駄無",
       "price": "3,520円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "烈光頑駄無",
       "model": "",
@@ -45641,9 +45675,9 @@ const bandai_data_json = {
     {
       "product": "ハローキティ/シャア専用ザクII[SDガンダムクロスシルエット]",
       "price": "2,750円（税込）",
-      "brand": "SDガンダムシリーズ",
+      "brand": "SDガンダム クロスシルエット",
       "scale": "",
-      "name": "ハローキティ/シャア専用ザクII[クロスシルエット]",
+      "name": "ハローキティ/シャア専用ザクII[]",
       "model": "",
       "series": [],
       "no": "4249"
@@ -45651,9 +45685,9 @@ const bandai_data_json = {
     {
       "product": "ハローキティ/ザクII[SDガンダムクロスシルエット]",
       "price": "2,750円（税込）",
-      "brand": "SDガンダムシリーズ",
+      "brand": "SDガンダム クロスシルエット",
       "scale": "",
-      "name": "ハローキティ/ザクII[クロスシルエット]",
+      "name": "ハローキティ/ザクII[]",
       "model": "",
       "series": [],
       "no": "4250"
@@ -46006,9 +46040,9 @@ const bandai_data_json = {
     {
       "product": "SDガンダムクロスシルエット RX-78F00 ガンダム",
       "price": "1,320円（税込）",
-      "brand": "SDガンダムシリーズ",
+      "brand": "SDガンダム クロスシルエット",
       "scale": "",
-      "name": "クロスシルエット F00 ガンダム",
+      "name": "F00 ガンダム",
       "model": "RX-78",
       "series": [
         "機動戦士ガンダム"
@@ -46472,9 +46506,9 @@ const bandai_data_json = {
     {
       "product": "BANDAI SPIRITS エントリーニッパー[ピンク]",
       "price": "715円（税込）",
-      "brand": "BANDAI SPIRITS ツール",
+      "brand": "",
       "scale": "",
-      "name": "エントリーニッパー[ピンク]",
+      "name": "BANDAI SPIRITS エントリーニッパー[ピンク]",
       "model": "",
       "series": [],
       "no": "4314"
@@ -46482,9 +46516,9 @@ const bandai_data_json = {
     {
       "product": "BANDAI SPIRITS エントリーニッパー[グレー]",
       "price": "715円（税込）",
-      "brand": "BANDAI SPIRITS ツール",
+      "brand": "",
       "scale": "",
-      "name": "エントリーニッパー[グレー]",
+      "name": "BANDAI SPIRITS エントリーニッパー[グレー]",
       "model": "",
       "series": [],
       "no": "4315"
@@ -46585,7 +46619,7 @@ const bandai_data_json = {
       "price": "1,320円（税込）",
       "brand": "SDガンダム クロスシルエット",
       "scale": "",
-      "name": "ウイングガンダムゼロEW(クロスシルエットフレームVer.)[クリアカラー]",
+      "name": "ウイングガンダムゼロ EW (クロスシルエットフレームVer.)[クリアカラー]",
       "model": "",
       "series": [
         "新機動戦記ガンダムWシリーズ"
@@ -46843,7 +46877,8 @@ const bandai_data_json = {
       "p-bandai": {
         "no": "1000156724",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "30MM 1/144 オプションパーツセット4(戦国アーマー)",
@@ -48209,7 +48244,7 @@ const bandai_data_json = {
     {
       "product": "BB戦士 ガンダムベース福岡限定 ユニコーンガンダム ペルフェクティビリティ(最終決戦仕様)Ver.GSF",
       "price": "1,980円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "ガンダムベース福岡限定 ユニコーンガンダム ペルフェクティビリティ(最終決戦仕様)Ver.GSF",
       "model": "",
@@ -48289,9 +48324,9 @@ const bandai_data_json = {
     {
       "product": "ハローキティ/ザクII[SDガンダムクロスシルエット][クリアカラー]",
       "price": "2,750円（税込）",
-      "brand": "SDガンダムシリーズ",
+      "brand": "SDガンダム クロスシルエット",
       "scale": "",
-      "name": "ハローキティ/ザクII[クロスシルエット][クリアカラー]",
+      "name": "ハローキティ/ザクII[][クリアカラー]",
       "model": "",
       "series": [
         "機動戦士ガンダム"
@@ -48673,7 +48708,8 @@ const bandai_data_json = {
       "series": [
         "機動戦士ガンダムSEED"
       ],
-      "no": "4474"
+      "no": "4474",
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "RG 1/144 Hi-νガンダム",
@@ -49060,9 +49096,9 @@ const bandai_data_json = {
     {
       "product": "ENTRY GRADE 江戸川コナン(シャア専用ザクIIカラー)&HG 1/144 シャア専用ザクII(赤井秀一カラー)",
       "price": "3,300円（税込）",
-      "brand": "HG［ハイグレード］",
+      "brand": "ENTRY GRADE",
       "scale": "1/144",
-      "name": "ENTRY GRADE 江戸川コナン(シャア専用ザクIIカラー)& シャア専用ザクII(赤井秀一カラー)",
+      "name": "江戸川コナン(シャア専用ザクIIカラー)&HG シャア専用ザクII(赤井秀一カラー)",
       "model": "",
       "series": [
         "機動戦士ガンダム",
@@ -49207,9 +49243,9 @@ const bandai_data_json = {
     {
       "product": "アクションベース5 [GUNDAM FACTORY YOKOHAMA Ver.]",
       "price": "770円（税込）",
-      "brand": "GUNDAM FACTORY YOKOHAMA",
+      "brand": "アクションベース",
       "scale": "",
-      "name": "アクションベース5 [ Ver.]",
+      "name": "5 [GUNDAM FACTORY YOKOHAMA Ver.]",
       "model": "",
       "series": [
         "機動戦士ガンダム"
@@ -50126,7 +50162,8 @@ const bandai_data_json = {
         "機動戦士ガンダム 鉄血のオルフェンズ",
         "鉄血のオルフェンズ HG"
       ],
-      "no": "4597"
+      "no": "4597",
+      "reshipment_data": "2021/10/14"
     },
     {
       "product": "SDW HEROES クレオパトラキュベレイ ダークマスクVer.",
@@ -50600,9 +50637,9 @@ const bandai_data_json = {
     {
       "product": "SDガンダムクロスシルエット ガンダムベース限定 ガンダムバルバトスルプスレクス[クリアカラー]",
       "price": "1,760円（税込）",
-      "brand": "SDガンダムシリーズ",
+      "brand": "SDガンダム クロスシルエット",
       "scale": "",
-      "name": "クロスシルエット ガンダムベース限定 ガンダムバルバトスルプスレクス[クリアカラー]",
+      "name": "ガンダムベース限定 ガンダムバルバトスルプスレクス[クリアカラー]",
       "model": "",
       "series": [
         "機動戦士ガンダム 鉄血のオルフェンズ"
@@ -51684,9 +51721,9 @@ const bandai_data_json = {
     {
       "product": "BANDAI SPIRITS スティックヤスリセット",
       "price": "550円（税込）",
-      "brand": "BANDAI SPIRITS ツール",
+      "brand": "",
       "scale": "",
-      "name": "スティックヤスリセット",
+      "name": "BANDAI SPIRITS スティックヤスリセット",
       "model": "",
       "series": [],
       "no": "4734"
@@ -51694,9 +51731,9 @@ const bandai_data_json = {
     {
       "product": "BANDAI SPIRITS スティックヤスリセット [ミニ]",
       "price": "550円（税込）",
-      "brand": "BANDAI SPIRITS ツール",
+      "brand": "",
       "scale": "",
-      "name": "スティックヤスリセット [ミニ]",
+      "name": "BANDAI SPIRITS スティックヤスリセット [ミニ]",
       "model": "",
       "series": [],
       "no": "4735"
@@ -51806,6 +51843,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "Gファルコンユニット ガンダムダブルエックス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51821,6 +51859,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "リアルタイプ 旧型ザク",
+      "model": "MS-05",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51836,6 +51875,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "リアルタイプ ザク",
+      "model": "MS-06",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51851,6 +51891,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ザクII シン・マツナガ大尉機",
+      "model": "MS-06R",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51866,6 +51907,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ジョニー・ライデン専用ザクII",
+      "model": "MS-06R-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51881,6 +51923,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "リアルタイプ ドム",
+      "model": "MS-09",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51896,6 +51939,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "リアルタイプ ゲルググ",
+      "model": "MS-11",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51908,9 +51952,10 @@ const bandai_data_json = {
     {
       "product": "1/100 RGM-79 リアルタイプ ジム",
       "price": "770円（税込）",
-      "brand": "RG［リアルグレード］",
+      "brand": "",
       "scale": "1/100",
-      "name": "M-79 リアルタイプ ジム",
+      "name": "リアルタイプ ジム",
+      "model": "RGM-79",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51926,6 +51971,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "リアルタイプ ガンダム",
+      "model": "RX-78",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51941,6 +51987,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "プロトタイプドム",
+      "model": "YMS-09",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51956,6 +52003,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "局地戦闘型ドム",
+      "model": "YMS-09",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51971,6 +52019,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "アッガイ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -51986,6 +52035,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "アッグ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52001,6 +52051,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "アッグガイ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52016,6 +52067,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "アルトロンガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52031,6 +52083,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "ウイングガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52046,6 +52099,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "ウイングガンダム ゼロカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52061,6 +52115,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "ウイングガンダム ゼロカスタム スペシャル オペレーションタイプ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52076,6 +52131,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ガナーザクウォーリア(ルナマリア・ホーク専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52091,6 +52147,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ガンキャノン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52106,6 +52163,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "ガンダム サンドロックカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52121,6 +52179,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ガンダムF90 増装ウェポン3種セット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52134,6 +52193,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ガンダムF90-Pタイプ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52147,6 +52207,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ガンダムF90-Vタイプ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52160,6 +52221,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ガンダムF90II-Lタイプ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52173,6 +52235,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ガンダムRXF91改",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52186,6 +52249,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "ガンダムデスサイズヘルカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52201,6 +52265,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "ガンダムナタク",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52216,6 +52281,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "ガンダムヘビーアームズカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52231,6 +52297,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "ガンダムマックスター",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52246,6 +52313,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "ガンダムヴァサーゴ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52261,6 +52329,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "グフ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52276,6 +52345,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ゴッグ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52291,6 +52361,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "サーペントカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52306,6 +52377,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "シェンロンガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52321,6 +52393,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "シャア専用ゲルググ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52334,6 +52407,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "シャア専用ズゴック",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52349,6 +52423,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "シャイニングガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52362,6 +52437,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "シュヴァルベグレイズ(ガエリオ機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52377,6 +52453,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ゾゴック",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52390,6 +52467,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "トールギスIII",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52405,6 +52483,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "ドラゴンガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52420,6 +52499,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ビギナ・ギナ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52433,6 +52513,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "ファンネル付νガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52448,6 +52529,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "フォースインパルスガンダム+ソードシルエット(エクストラフィニッシュバージョン)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52461,6 +52543,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "マスターガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52476,6 +52559,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "マ・クべ専用 ギャン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52489,6 +52573,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/100",
       "name": "ライジングガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52504,6 +52589,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "量産型ゲルググ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52517,6 +52603,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "量産型ザク",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52532,6 +52619,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/100",
       "name": "量産型ズゴック",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52547,6 +52635,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "GM(ジム)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52562,6 +52651,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ザク強行偵察型",
+      "model": "MS-06E",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52577,6 +52667,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ザクキャノン",
+      "model": "MS-06K",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52592,6 +52683,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "水中用ザク",
+      "model": "MS-06M",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52607,6 +52699,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ザクII ジョニー・ライデン少佐機",
+      "model": "MS-06R-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52622,6 +52715,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "グフ飛行試験型",
+      "model": "MS-07H",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52634,9 +52728,10 @@ const bandai_data_json = {
     {
       "product": "1/144 RGM-79 ジムスナイパーカスタム",
       "price": "440円（税込）",
-      "brand": "RG［リアルグレード］",
+      "brand": "",
       "scale": "1/144",
-      "name": "M-79 ジムスナイパーカスタム",
+      "name": "ジムスナイパーカスタム",
+      "model": "RGM-79",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52652,6 +52747,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ガンキャノンII",
+      "model": "RX-77-4",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52667,6 +52763,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "プロトタイプドム",
+      "model": "YMS-09",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52682,6 +52779,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "局地戦闘型ドム",
+      "model": "YMS-09",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52697,6 +52795,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "νガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52712,6 +52811,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "アッグガイ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52727,6 +52827,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "アルトロンガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52742,6 +52843,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ウイングガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52757,6 +52859,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ウイングガンダム ゼロカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52772,6 +52875,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ウイングガンダムゼロ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52787,6 +52891,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ガンタンク",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52802,6 +52907,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ガンダム GP-01Fb",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52815,6 +52921,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ガンダム GP03S",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52828,6 +52935,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムアスクレプオス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52844,6 +52952,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ガンダムエピオン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52859,6 +52968,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムエルオーブースター",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52875,6 +52985,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムグリープ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52891,6 +53002,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ガンダムサンドロック",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52904,6 +53016,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムサンドロックカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52919,6 +53032,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムサンドロックカスタム メタルクリヤー特別版",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52934,6 +53048,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ガンダムデスサイズ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52949,6 +53064,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ガンダムデスサイズヘル",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52964,6 +53080,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムデスサイズヘルカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52979,6 +53096,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムナタク",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -52994,6 +53112,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムナタク メタルクリヤー特別版",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53009,6 +53128,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ガンダムヘビーアームズ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53024,6 +53144,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムヘビーアームズカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53039,6 +53160,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ギラ・ドーガ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53054,6 +53176,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "クェス用ヤクト・ドーガ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53069,6 +53192,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ケンプファー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53084,6 +53208,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ゲルググ・J",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53099,6 +53224,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "サザビー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53114,6 +53240,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "サーペントカスタム メタルクリヤー特別版",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53127,6 +53254,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ザク改",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53142,6 +53270,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "シェンロンガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53157,6 +53286,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ジェガン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53172,6 +53302,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ジム・コマンド",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53187,6 +53318,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ジム・コマンド宇宙用",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53202,6 +53334,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "トールギス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53217,6 +53350,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "トールギスII",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53232,6 +53366,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "トールギスIII",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53247,6 +53382,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "トールギスIII メタルクリヤー特別版",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53260,6 +53396,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ハイゴッグ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53275,6 +53412,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ハイドラガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53291,6 +53429,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ファンネル付νガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53306,6 +53445,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "マ・クべ専用 ギャン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53321,6 +53461,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "メリクリウス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53336,6 +53477,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "モビルスモー ゴールドメッキタイプ&シルバーメッキタイプ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53351,6 +53493,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ヤクト・ドーガ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53366,6 +53509,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "リックドムII(ツヴァイ)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53381,6 +53525,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "リ・ガズィ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53396,6 +53541,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "ヴァイエイト",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53411,6 +53557,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "量産型ゲルググ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53426,6 +53573,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/24",
       "name": "00 ジオン軍大型戦闘艦 グワジン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53441,6 +53589,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/24",
       "name": "00 地球連邦軍宇宙空母 ホワイトベース",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53456,6 +53605,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/550",
       "name": "1/250 ザクレロ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53471,6 +53621,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "",
       "name": "1/250 G-アーマー+ ガンダム",
+      "model": "RX-78",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53486,6 +53637,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "",
       "name": "1/250 ガンダム情景模型 テキサスの攻防",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53501,6 +53653,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/35",
       "name": "ザクヘッド(黒い三連星カラーVer.)",
+      "model": "MS-06R-1A",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53516,6 +53669,7 @@ const bandai_data_json = {
       "brand": "メガサイズモデル",
       "scale": "1/48",
       "name": "ガンダム",
+      "model": "RX-78-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53531,6 +53685,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/48",
       "name": "メガサイズモデル ガンダム 1/1ガンダムプロジェクトVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53547,6 +53702,7 @@ const bandai_data_json = {
       "brand": "メガサイズモデル",
       "scale": "1/48",
       "name": "シャア専用ザク",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53562,6 +53718,7 @@ const bandai_data_json = {
       "brand": "メガサイズモデル",
       "scale": "1/48",
       "name": "量産型ザク",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53574,9 +53731,10 @@ const bandai_data_json = {
     {
       "product": "1/48メガサイズ ガンダム RG1/1プロジェクトVer.",
       "price": "7,800円（税込）",
-      "brand": "RG［リアルグレード］",
+      "brand": "メガサイズモデル",
       "scale": "1/48",
-      "name": "メガサイズ ガンダム 1/1プロジェクトVer.",
+      "name": "ガンダム RG1/1プロジェクトVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53590,9 +53748,10 @@ const bandai_data_json = {
     {
       "product": "1/48メガサイズ ガンダム RG1/1プロジェクトVer.(4月お届け分 最終生産)",
       "price": "7,800円（税込）",
-      "brand": "RG［リアルグレード］",
+      "brand": "メガサイズモデル",
       "scale": "1/48",
-      "name": "メガサイズ ガンダム 1/1プロジェクトVer.(4月お届け分 最終生産)",
+      "name": "ガンダム RG1/1プロジェクトVer.(4月お届け分 最終生産)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53609,6 +53768,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/550",
       "name": "アルパアジール",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53624,6 +53784,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/550",
       "name": "ブラウ・ブロ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53639,6 +53800,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/550",
       "name": "ララァスン専用モビルアーマー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53654,6 +53816,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/60",
       "name": "ガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53669,6 +53832,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/60",
       "name": "ガンダムフルアーマータイプ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53684,6 +53848,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/60",
       "name": "ザクII(ジョニー・ライデン少佐機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53699,6 +53864,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/60",
       "name": "シャア専用ゲルググ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53712,6 +53878,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/60",
       "name": "シャア専用ザク",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53727,6 +53894,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/60",
       "name": "量産型ゲルググ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53740,6 +53908,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/60",
       "name": "量産型ザク",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53755,6 +53924,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/60",
       "name": "黒い三連星使用機 ザクII",
+      "model": "MS-06R",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53770,6 +53940,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/72",
       "name": "メカニック・モデル ガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53783,6 +53954,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/72",
       "name": "メカニック・モデル シャア専用ザク",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53796,6 +53968,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "リ・ガズィ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53811,6 +53984,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "ガンダムMk-II",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53826,6 +54000,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "ジオング",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53841,6 +54016,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "武者ウイングゼロ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53856,6 +54032,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "νガンダム(HWS装備)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53871,6 +54048,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "努貫丸",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53884,6 +54062,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "蒼天丸&紅天丸",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53897,6 +54076,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "超将軍闘我",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53912,6 +54092,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "ヘビーウエポン・キャプテンガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53927,6 +54108,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "デュエルガンダムアサルトシュラウド",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53940,6 +54122,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "ガナーザク・ウォーリア(ルナマリア・ホーク専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53955,6 +54138,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "武者影ガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53970,6 +54154,7 @@ const bandai_data_json = {
       "brand": "SDガンダムBB戦士",
       "scale": "",
       "name": "ガンセイヴァーZ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53980,9 +54165,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 LEGENDBB フルアーマー騎士ガンダム(伝説の巨人編Ver.)",
       "price": "2,700円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "フルアーマー騎士ガンダム(伝説の巨人編Ver.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -53995,9 +54181,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 LEGENDBB 二代目頑駄無大将軍(白鋼Ver.)",
       "price": "2,700円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "二代目頑駄無大将軍(白鋼Ver.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54010,9 +54197,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 LEGENDBB 新世大将軍",
       "price": "4,730円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "新世大将軍",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54026,9 +54214,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 LEGENDBB 武者號斗丸(最終決戦Ver.)",
       "price": "2,200円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "武者號斗丸(最終決戦Ver.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54041,9 +54230,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 LEGENDBB 武者頑駄無(超鋼Ver.)",
       "price": "2,700円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "武者頑駄無(超鋼Ver.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54056,9 +54246,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 LEGENDBB 武者飛駆鳥 超鋼Ver.",
       "price": "2,750円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "武者飛駆鳥 超鋼Ver.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54071,9 +54262,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 LEGENDBB 殺駆頭(闇将軍 超鋼Ver.)",
       "price": "2,700円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "殺駆頭(闇将軍 超鋼Ver.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54086,9 +54278,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 LEGENDBB 騎士ユニコーンガンダム(ビーストモード アルティメットバトルVer.)",
       "price": "2,700円（税込）",
-      "brand": "SDガンダムBB戦士 LEGENDBB",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
       "scale": "",
       "name": "騎士ユニコーンガンダム(ビーストモード アルティメットバトルVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54101,9 +54294,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 ネオ・ジオング メタリックVer.",
       "price": "4,104円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "ネオ・ジオング メタリックVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54116,9 +54310,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 三国伝エクストラ武装セット&ストライク劉備ガンダム 瞑装態(ディアクティブカラー)",
       "price": "4,200円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "三国伝エクストラ武装セット&ストライク劉備ガンダム 瞑装態(ディアクティブカラー)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54131,9 +54326,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 武者多威無掘駆主・壱(ムシャタイムボックス・イチ)",
       "price": "4,725円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "武者多威無掘駆主・壱(ムシャタイムボックス・イチ)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54146,9 +54342,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 武者多威無掘駆主・弐(ムシャタイムボックス・ニ)",
       "price": "5,880円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "武者多威無掘駆主・弐(ムシャタイムボックス・ニ)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54161,9 +54358,10 @@ const bandai_data_json = {
     {
       "product": "BB戦士 真 三国伝三位一体セット",
       "price": "2,200円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "真 三国伝三位一体セット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54177,6 +54375,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "",
       "name": "B印 YOSHIDA×PORTER×GUNPLA スペシャルパッケージ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54193,6 +54392,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/144",
       "name": "EX ヒルドルブ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54208,6 +54408,7 @@ const bandai_data_json = {
       "brand": "EXモデル",
       "scale": "1/144",
       "name": "1/100・ ドップ・ファイター",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54223,6 +54424,7 @@ const bandai_data_json = {
       "brand": "EXモデル",
       "scale": "1/144",
       "name": "ガンダムトレーラー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54239,6 +54441,7 @@ const bandai_data_json = {
       "brand": "EXモデル",
       "scale": "1/144",
       "name": "サムソン・トレーラー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54254,6 +54457,7 @@ const bandai_data_json = {
       "brand": "EXモデル",
       "scale": "1/144",
       "name": "ジェットコアブースター",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54270,6 +54474,7 @@ const bandai_data_json = {
       "brand": "EXモデル",
       "scale": "1/144",
       "name": "ジオン軍メカセット (ルッグン/シーランス)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54286,6 +54491,7 @@ const bandai_data_json = {
       "brand": "EXモデル",
       "scale": "1/144",
       "name": "ドダイツー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54302,6 +54508,7 @@ const bandai_data_json = {
       "brand": "EXモデル",
       "scale": "1/144",
       "name": "マゼラ・アタック",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54319,6 +54526,7 @@ const bandai_data_json = {
       "brand": "EXモデル",
       "scale": "1/1700",
       "name": "サラミス&マゼラン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54335,6 +54543,7 @@ const bandai_data_json = {
       "brand": "EXモデル",
       "scale": "1/1700",
       "name": "ホワイトベース",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54351,6 +54560,7 @@ const bandai_data_json = {
       "brand": "EXモデル",
       "scale": "1/1700",
       "name": "ムサイ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54367,6 +54577,7 @@ const bandai_data_json = {
       "brand": "EXモデル",
       "scale": "1/1700",
       "name": "モビルシップ アーガマ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54382,6 +54593,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "G3ガンダム+シャア専用リックドムセット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54397,6 +54609,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "GNアーチャー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54412,6 +54625,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "GNアームズ TYPE-E(リアルカラーVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54427,6 +54641,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "GPB-04B ベアッガイ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54440,6 +54655,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "GPB-06F スーパーカスタムザクF2000",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54455,6 +54671,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "Gアーマー(Gファイター+ ガンダム)",
+      "model": "RX-78-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54470,6 +54687,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "Gバウンサー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54485,6 +54703,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "Hi-ニューガンダム GPBカラー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54500,6 +54719,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "高機動試作型ザク",
+      "model": "MS-06RD-4",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54515,6 +54735,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "量産型ゲルググ/MS-14C ゲルググキャノン",
+      "model": "MS-14A",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54530,6 +54751,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "R01 エールストライクガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54545,6 +54767,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "R02 デュエルガンダム アサルトシュラウド",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54560,6 +54783,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "R03 バスターガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54575,6 +54799,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "R04 ブリッツガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54590,6 +54815,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "R05 イージスガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54605,6 +54831,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "R09 フォビドゥンガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54620,6 +54847,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジェガン ノーマルタイプ(F91Ver.)",
+      "model": "RGM-89J",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54637,6 +54865,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジェガンBタイプ(F91Ver.)",
+      "model": "RGM-89M",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54654,6 +54883,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジェガンAタイプ(F91Ver.)",
+      "model": "RGM-89R",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54671,6 +54901,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガブスレイ",
+      "model": "RX-110",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54686,6 +54917,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "Y-0 プロトタイプグフ(機動実証機 サンドカラーVer.)",
+      "model": "MS-07A",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54701,6 +54933,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "Y-0 プロトタイプグフ(機動実証機 ブルーカラーVer.)",
+      "model": "MS-07A",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54716,6 +54949,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "イオフレーム獅電改(流星号)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54731,6 +54965,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "エクストリームガンダム type-レオス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54746,6 +54981,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "エルフ・ブルック(量産機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54761,6 +54997,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "カミキバー二ングガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54776,6 +55013,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダム G‐エルス(BEFORE)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54791,6 +55029,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダム ダブルバレット",
+      "model": "AGE-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54806,6 +55045,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダム ダークハウンド",
+      "model": "AGE-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54821,6 +55061,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダム 特務隊仕様",
+      "model": "AGE-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54836,6 +55077,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムG-セルフ(リフレクターパック装備型)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54851,6 +55093,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムTR-1[ヘイズル2号機]",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54864,6 +55107,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムTR-6 [キハールII](ADVANCE OF Z ティターンズの旗のもとに)【6個まとめ買い】",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54879,6 +55123,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムアストレイゴールドフレーム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54894,6 +55139,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムアストレイゴールドフレーム天(アマツ)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54909,6 +55155,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムサバーニャ クリアカラーVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54924,6 +55171,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムサンドロック改",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54940,6 +55188,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムハルート クリアカラーVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54955,6 +55204,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムバルバトス コンプリートセット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54970,6 +55220,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムレギルス(MEMORY OF EDEN)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -54985,6 +55236,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "クロスボーンガンダムX1フルクロス TYPE.GBFT",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55000,6 +55252,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "グレイズ(アーレス所属機 一般機/指揮官機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55015,6 +55268,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ゴッグ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55030,6 +55284,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "サザビー GPBカラー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55045,6 +55300,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ザクI ”旧ザク”(GUNDAM THUNDERBOLT Ver.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55060,6 +55316,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ザクII(ガルマ専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55075,6 +55332,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "シュヴァルベグレイズ(ガエリオ機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55090,6 +55348,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジェガンF91Ver.3機セット【水転写式デカール付属】",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55107,6 +55366,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジム・クゥエル",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55122,6 +55382,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジム・スナイパーII ホワイト・ディンゴ隊仕様",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55137,6 +55398,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジンクス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55152,6 +55414,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジンクスIII(アロウズ型)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55167,6 +55430,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジンクスIII(連邦軍型)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55182,6 +55446,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "スーパーカスタムザクF2000",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55197,6 +55462,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ゼダス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55212,6 +55478,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ゼダスR",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55227,6 +55494,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ダナジン(紫カラー)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55243,6 +55511,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ダブルオークアンタクリアカラーVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55258,6 +55527,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "チェンジリングライフル",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55271,6 +55541,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ティルトローターパック",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55286,6 +55557,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "トライエイジガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55301,6 +55573,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ドラド",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55316,6 +55589,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ノーベルガンダム(バーサーカーモード)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55331,6 +55605,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "バインダーガン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55346,6 +55621,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "バウ GPBカラー&ザクI・スナイパータイプ GPBカラー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55361,6 +55637,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "バクト",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55376,6 +55653,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ビギニング30ガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55391,6 +55669,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ビギニングガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55406,6 +55685,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ビルドハンズ丸型[S,M,L]",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55421,6 +55701,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ビルドハンズ角型[S,M,L]",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55436,6 +55717,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "フォーエバーガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55451,6 +55733,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "フルアーマー・ガンダム (ガンダムサンダーボルト版)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55466,6 +55749,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "フルアーマー・ユニコーンガンダム(デストロイモード/レッドカラーVer..)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55481,6 +55765,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ブルーディスティニー2号機 オメガカラー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55496,6 +55781,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ブレイズザクファントム(レイ・ザ・バレル専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55511,6 +55797,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "プトレマイオスアームズ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55526,6 +55813,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "マックナイフ(量産機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55541,6 +55829,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ミーティアユニット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55556,6 +55845,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "モビルワーカー 01式 後期型(ランバ・ラル機)",
+      "model": "MW-01",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55571,6 +55861,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ラファエルガンダム クリアカラーVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55586,6 +55877,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ヴァイエイト & メリクリウス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55602,6 +55894,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "宇宙用ジャハナム(量産機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55617,6 +55910,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "水中型ガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55632,6 +55926,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "百万式(MEGA-SHIKI)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55647,6 +55942,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "百式 GPBカラー｢白式｣",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55662,6 +55958,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "百式(GPBカラー｢白式｣)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55677,6 +55974,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "量産型ザク+ビッグ・ガン (ガンダムサンダーボルト版)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55692,6 +55990,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムVer.G30th プレミアムゴールドVer.",
+      "model": "RX-78-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55708,6 +56007,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ダイバーギア",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55723,6 +56023,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "マシンライダー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55738,6 +56039,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/550",
       "name": "メカニクス ノイエ・ジール",
+      "model": "AMX-002",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55753,6 +56055,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/550",
       "name": "メカニクス ヴァル・ヴァロ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55768,6 +56071,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "Ez-SR フォックスハウンド",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55783,6 +56087,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "Hi-νガンダムインフラックス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55798,6 +56103,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "すーぱーふみな ティターンズメイドVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55813,6 +56119,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "カテドラルガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55828,6 +56135,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダムドライオンIII(ドライ)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55843,6 +56151,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガーベラ・テトラ(キララ専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55858,6 +56167,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ゴーストジェガン F",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55873,6 +56183,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ゴーストジェガン M",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55888,6 +56199,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "スタービルドストライクガンダム Ver.RGシステム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55903,6 +56215,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ターンエーガンダムシン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55918,6 +56231,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ライトニングZガンダム アスプロス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55933,6 +56247,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "煌式(GILLA-SHIKI)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55948,6 +56263,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ターンエーガンダム用 拡張エフェクトユニット“月光蝶”",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55963,6 +56279,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ブラストインパルスガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55978,6 +56295,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ゴッドガンダム VS マスターガンダム 流派東方不敗ハイパーモードセット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -55993,6 +56311,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "プリティインピンク&プチプチッガイ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56008,6 +56327,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "94式ベースジャバー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56023,6 +56343,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ギラ・ズール(キュアロン機)",
+      "model": "AMS-129",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56038,6 +56359,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ギラ・ズール(ギルボア・サント機)",
+      "model": "AMS-129",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56053,6 +56375,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "Gディフェンサー &フライングアーマー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56068,6 +56391,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "アナベル・ガトー専用リック・ドム",
+      "model": "MS-09RS",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56083,6 +56407,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジェガンA2型(ゼネラル・レビル配備機)",
+      "model": "RGM-89A2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56098,6 +56423,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジェガンD型",
+      "model": "RGM-89D",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56113,6 +56439,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジェガン ノーマルタイプ(F91Ver.)",
+      "model": "RGM-89J",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56128,6 +56455,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジェガンBタイプ(F91Ver.)",
+      "model": "RGM-89M",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56143,6 +56471,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジェガンAタイプ(F91Ver.)",
+      "model": "RGM-89R",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56158,6 +56487,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "RGM-89S スタークジェガン( Ver.)",
+      "model": "CCA-MSV",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56173,6 +56503,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "プロト・スタークジェガン",
+      "model": "RGM-89S",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56188,6 +56519,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "V2ガンダム用拡張エフェクトユニット“光の翼”",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56203,6 +56535,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ZII(ゼッツー) トラヴィス・カークランドカラー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56218,6 +56551,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "アイザック/ガザC/ギラ・ドーガ(ユニコーンVer.)セット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56233,6 +56567,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "アッシマー(グリーンダイバーズVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56248,6 +56583,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガトー専用ゲルググ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56263,6 +56599,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンキャノン(21stCENTURY REAL TYPE Ver.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56278,6 +56615,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガンダム(21stCENTURY REAL TYPE Ver.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56293,6 +56631,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ガーベラ・テトラ(ロールアウトVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56308,6 +56647,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "キュベレイMk-II (プルツー専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56323,6 +56663,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "キュベレイMk-II(エルピー・プル専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56338,6 +56679,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "キュベレイ用ファンネルエフェクトセット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56353,6 +56695,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ギラ・ドーガ(フル・フロンタル専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56368,6 +56711,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "クシャトリヤ パールクリアバインダーVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56383,6 +56727,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "クロスボーン・ガンダムX1改・改",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56398,6 +56743,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "クロスボーン・ガンダムX2",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56413,6 +56759,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "グフ&ゲルググ(ヴィッシュ・ドナヒュー専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56428,6 +56775,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "グフ(21stCENTURY REAL TYPE Ver.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56443,6 +56791,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "シナンジュ レッドコメットスパークルVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56458,6 +56807,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "シルヴァ・バレト(ガエル・チャン専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56473,6 +56823,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジェスタ トライスタークリアVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56488,6 +56839,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジェスタ・キャノン トライスタークリアVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56503,6 +56855,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジム&ガンキャノン量産型(ホワイト・ディンゴ隊仕様)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56518,6 +56871,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジムII デザートカラーVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56533,6 +56887,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジムII(エゥーゴカラーVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56548,6 +56903,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジムII・セミストライカー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56563,6 +56919,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジム・スナイパーII(リド・ウォルフ機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56578,6 +56935,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジム改 スタンダードカラー&ボール改修型",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56593,6 +56951,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ジュアッグ(Ver.MSV)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56608,6 +56967,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ズサ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56623,6 +56983,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ゾゴック(ジャブロー攻略戦仕様)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56638,6 +56999,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "デルタプラス インナースペースクリアVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56653,6 +57015,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ドラッツェ(ユニコーンVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56668,6 +57031,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ドラッツェ改",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56683,6 +57047,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ネオ・ジオング用 拡張エフェクトユニット“サイコシャード”",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56698,6 +57063,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "バイアラン・カスタム2号機",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56713,6 +57079,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "バイアラン・カスタム2号機(バンデシネ版)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56728,6 +57095,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ベースジャバー(ゼータガンダムVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56743,6 +57111,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ベースジャバー(ユニコーンジオン軍残党カラーVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56758,6 +57127,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ペイルライダー(陸戦重装備仕様)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56773,6 +57143,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ボールK型(第08MS小隊版)&ボール(シャークマウス仕様)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56788,6 +57159,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "メガ・バズーカ・ランチャー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56803,6 +57175,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ユニコーンガンダム デストロイモード NT-DパールクリアVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56818,6 +57191,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ユニコーンガンダム ユニコーンモード パールクリアVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56833,6 +57207,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ユニコーンガンダム2号機 バンシィ(デストロイモード) NT-DクリアVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56848,6 +57223,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ユニコーンガンダム2号機 バンシィ(ユニコーンモード) ダーククリアVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56863,6 +57239,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ユニコーンガンダム3号機 フェネクス type RC (ユニコーンモード) シルバーコーティングVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56878,6 +57255,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "リゼル(ディフェンサーbユニット)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56893,6 +57271,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "リゼルC型(ゼネラル・レビル配備機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56908,6 +57287,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "リバウ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56923,6 +57303,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "ローゼン・ズール エリートローズガードクリアVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56938,6 +57319,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "1/12",
       "name": "HY2M ガンダム アニメーションカラーVer.【送料無料!】",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56949,11 +57331,120 @@ const bandai_data_json = {
       }
     },
     {
+      "product": "LEGEND BB コマンドガンダム",
+      "price": "1,100円（税込）",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
+      "scale": "",
+      "name": "コマンドガンダム",
+      "model": "",
+      "series": [],
+      "no": "",
+      "p-bandai": {
+        "no": "1000146743",
+        "tag": [
+          "ITEM_OUT_OF_STOCK"
+        ]
+      }
+    },
+    {
+      "product": "LEGEND BB バーサル騎士ガンダム",
+      "price": "1,650円（税込）",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
+      "scale": "",
+      "name": "バーサル騎士ガンダム",
+      "model": "",
+      "series": [],
+      "no": "",
+      "p-bandai": {
+        "no": "1000146602",
+        "tag": [
+          "ITEM_OUT_OF_STOCK"
+        ]
+      }
+    },
+    {
+      "product": "LEGEND BB 武者號斗丸",
+      "price": "1,100円（税込）",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
+      "scale": "",
+      "name": "武者號斗丸",
+      "model": "",
+      "series": [],
+      "no": "",
+      "p-bandai": {
+        "no": "1000157154",
+        "tag": []
+      }
+    },
+    {
+      "product": "LEGEND BB 武者頑駄無",
+      "price": "1,100円（税込）",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
+      "scale": "",
+      "name": "武者頑駄無",
+      "model": "",
+      "series": [],
+      "no": "",
+      "p-bandai": {
+        "no": "1000146597",
+        "tag": [
+          "ITEM_OUT_OF_STOCK"
+        ]
+      }
+    },
+    {
+      "product": "LEGEND BB 武者飛駆鳥",
+      "price": "1,320円（税込）",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
+      "scale": "",
+      "name": "武者飛駆鳥",
+      "model": "",
+      "series": [],
+      "no": "",
+      "p-bandai": {
+        "no": "1000157156",
+        "tag": []
+      }
+    },
+    {
+      "product": "LEGEND BB 騎士ガンダム",
+      "price": "1,100円（税込）",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
+      "scale": "",
+      "name": "騎士ガンダム",
+      "model": "",
+      "series": [],
+      "no": "",
+      "p-bandai": {
+        "no": "1000146596",
+        "tag": [
+          "ITEM_OUT_OF_STOCK"
+        ]
+      }
+    },
+    {
+      "product": "LEGEND BB 騎士スペリオルドラゴン",
+      "price": "2,750円（税込）",
+      "brand": "SDガンダム BB戦士 LEGENDBB",
+      "scale": "",
+      "name": "騎士スペリオルドラゴン",
+      "model": "",
+      "series": [],
+      "no": "",
+      "p-bandai": {
+        "no": "1000146606",
+        "tag": [
+          "ITEM_OUT_OF_STOCK"
+        ]
+      }
+    },
+    {
       "product": "MG 1/100 FA-78-2 ヘビー・ガンダム",
       "price": "4,860円（税込）",
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ヘビー・ガンダム",
+      "model": "FA-78-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56969,6 +57460,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "Hi-νガンダム Ver.Ka 用 HWS拡張セット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56984,6 +57476,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "F/J ザクII “ONE YEAR WAR 0079”設定カラーVer.",
+      "model": "MS-06",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -56999,6 +57492,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガルマ・ザビ専用 ザクII",
+      "model": "MS-06FS",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57014,6 +57508,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ザク Ver.2.0 ホワイトオーガー",
+      "model": "MS-06J",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57029,6 +57524,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ザクII(重力戦線イメージカラーVer.)",
+      "model": "MS-06J",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57044,6 +57540,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "アナベル・ガトー専用ザクII Ver.2.0",
+      "model": "MS-06R-1A",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57059,6 +57556,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "エリック・マンスフィールド専用ザクII",
+      "model": "MS-06R-1A",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57074,6 +57572,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ザクII(黒い三連星) Ver.2.0",
+      "model": "MS-06R-1A",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57089,6 +57588,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ユーマ・ライトニング専用ザクII",
+      "model": "MS-06R-1A",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57104,6 +57604,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ギャビー・ハザード専用ザクII",
+      "model": "MS-06R-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57119,6 +57620,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ロバート・ギリアム専用ザクII",
+      "model": "MS-06R-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57134,6 +57636,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ザクII Ver.2.0 リアルタイプカラー",
+      "model": "MS-06S",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57149,6 +57652,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "黒い三連星ザクVer.2.0",
+      "model": "MS-06S",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57164,6 +57668,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "マ・クベ専用グフ",
+      "model": "MS-07B",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57179,6 +57684,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "グフカスタム",
+      "model": "MS-07B-3",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57194,6 +57700,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "3 グフカスタム(重力戦線イメージカラーVer.)",
+      "model": "MS-07B",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57209,6 +57716,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ドム(重力戦線イメージカラーVer.)",
+      "model": "MS-09",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57224,6 +57732,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ドズル・ザビ専用リック・ドム",
+      "model": "MS-09R",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57239,6 +57748,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ゲルググキャノン(MSVカラー)",
+      "model": "MS-14C",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57254,6 +57764,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ネモ ユニコーンカラーVer.",
+      "model": "MSA-003",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57269,6 +57780,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ネモ ユニコーンデザートカラーVer.",
+      "model": "MSA-003",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57284,6 +57796,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "P2/3C ゼータガンダム3号機P2型 レッド・ゼータ",
+      "model": "MSZ-006",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57299,6 +57812,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ジム・キャノン",
+      "model": "RGC-80",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57314,6 +57828,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ユニコーンガンダム2号機 バンシィ チタニウムフィニッシュVer.",
+      "model": "RX-0",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57329,6 +57844,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダム(GUNDAM THE ORIGIN版)",
+      "model": "RX-78-02",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57344,6 +57860,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "プロトタイプガンダム",
+      "model": "RX-78-1",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57359,12 +57876,14 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダム Ver.2.0",
+      "model": "RX-78-2",
       "series": [],
       "no": "",
       "p-bandai": {
         "no": "1000150019",
         "tag": []
-      }
+      },
+      "reshipment_data": "2021/10/28"
     },
     {
       "product": "MG 1/100 RX-78-2ガンダム Ver.2.0 リアルタイプカラー",
@@ -57372,6 +57891,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダム Ver.2.0 リアルタイプカラー",
+      "model": "RX-78-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57387,6 +57907,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムVer.3.0用 拡張セット",
+      "model": "RX-78-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57402,6 +57923,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "Sガンダム ブースター・ユニット装着型",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57417,6 +57939,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "νガンダム HWS Ver.Ka",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57432,6 +57955,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "νガンダム Ver.Ka 用 HWS拡張セット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57447,6 +57971,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "アルトロンガンダム EW",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57463,6 +57988,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "インパルスガンダムブランシュ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57478,6 +58004,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ウイングガンダム EW",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57493,6 +58020,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ウイングガンダムゼロカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57506,6 +58034,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ウエポン&アーマーハンガー FOR フルアーマー・ガンダム Ver.Ka (GTB版)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57521,6 +58050,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ウエポン&アーマーハンガー FOR フルアーマー・ガンダム Ver.Ka (GUNDAM THUNDERBOLT版)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57536,6 +58066,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "エールストライクガンダム Ver.RM用 ランチャーストライカー/ソードストライカーパック",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57551,6 +58082,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダム GP01",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57566,6 +58098,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダム 2号機",
+      "model": "AGE-1",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57581,6 +58114,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムノーマル 特務隊仕様",
+      "model": "AGE-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57596,6 +58130,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムMk-II Ver.2.0(エゥーゴ)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57611,6 +58146,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムVer.ONE YEAR WAR 0079",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57626,6 +58162,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムVer.ONE YEAR WAR 0079 アニメーションカラーバージョン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57641,6 +58178,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムアストレイ ノワール",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57656,6 +58194,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムアストレイ レッドフレーム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57671,6 +58210,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムアストレイブルーフレームD用 ドラグーンフォーメーションベース",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57686,6 +58226,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムアメイジングエクシア",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57701,6 +58242,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムエクシア リペアII",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57716,6 +58258,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムデスサイズ EW",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57731,6 +58274,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムフェニーチェリナーシタアルバ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57746,6 +58290,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ガンダムヘビーアームズ改 EW",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57761,6 +58306,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "キュベレイMk-II (エルピー・プル専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57776,6 +58322,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ギラ・ドーガ(ユニコーンVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57791,6 +58338,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ギラ・ドーガ(レズン・シュナイダー専用機)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57806,6 +58354,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "クロスボーンガンダムX2 Ver.Ka",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57823,6 +58372,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "クロスボーンガンダムX3 Ver.Ka",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57840,6 +58390,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "グフ “ONE YEAR WAR 0079”設定カラーVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57855,6 +58406,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ゲルググ シャア・アズナブル大佐機 “ONE YEAR WAR 0079”設定カラーVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57870,6 +58422,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "サザビー Ver.Ka & RE/100 ナイチンゲール用 拡張ファンネルエフェクトセット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57885,6 +58438,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ザクキャノン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57900,6 +58454,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ザク・キャノン(ユニコーンカラーVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57915,6 +58470,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ジェスタ・キャノン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57930,6 +58486,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "スタービルドストライクガンダム(RGシステムVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57945,6 +58502,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ズゴック(ユニコーンカラーVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57960,6 +58518,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ゼータプラス(ユニコーンVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57975,6 +58534,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ターンエーガンダム(月光蝶Ver.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -57990,6 +58550,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ターンエーガンダム用拡張エフェクトユニット “月光蝶”",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58005,6 +58566,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ダブルオーガンダム セブンソード/G インスペクション",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58020,6 +58582,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ダブル・フィン・ファンネル拡張ユニット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58035,6 +58598,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "デスティニーインパルスガンダムR(リジェネス)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58050,6 +58614,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "トランザムライザー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58065,6 +58630,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "トールギスII",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58081,6 +58647,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "トールギスIII",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58096,6 +58663,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ドム “ONE YEAR WAR 0079”設定カラーVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58111,6 +58679,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "バリュートパック",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58126,6 +58695,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "パワード・ジム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58141,6 +58711,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "パーフェクトストライクガンダム スペシャルコーティングVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58156,6 +58727,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "フリーダムガンダム Ver.2.0 フルバーストモード スペシャルコーティングVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58171,6 +58743,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "フリーダムガンダム Ver.2.0用 拡張エフェクトセット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58186,6 +58759,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "フルアーマーガンダム(ブルーカラーVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58201,6 +58775,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "フルアーマー・ユニコーンガンダム(レッドカラーVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58216,6 +58791,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ボール(シャークマウスマーキング仕様)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58229,6 +58805,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "マラサイ(ユニコーンカラーVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58244,6 +58821,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "メガ・バズーカ・ランチャー",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58259,6 +58837,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ユニコーンガンダム2号機 バンシィ・ノルン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58274,6 +58853,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "ユニコーンガンダム2号機 バンシィ・ノルン (最終決戦Ver.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58289,6 +58869,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "小説版ユニコーンガンダム2号機バンシィ Ver.Ka 最終決戦仕様",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58304,6 +58885,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "武者ガンダムMk-II 徳川家康Ver.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58319,6 +58901,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "百式改",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58334,6 +58917,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "真武者頑駄無 戦国の陣",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58349,6 +58933,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "量産型百式改",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58364,6 +58949,7 @@ const bandai_data_json = {
       "brand": "MG［マスターグレード］",
       "scale": "1/100",
       "name": "高機動型ザク “サイコ・ザク” (GUNDAM THUNDERBOLT版) ラストセッションVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58379,6 +58965,7 @@ const bandai_data_json = {
       "brand": "PG［パーフェクトグレード］",
       "scale": "1/60",
       "name": "量産型ザクII",
+      "model": "MS-06F",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58394,6 +58981,7 @@ const bandai_data_json = {
       "brand": "PG［パーフェクトグレード］",
       "scale": "1/60",
       "name": "シャア専用ザクII",
+      "model": "MS-06S",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58409,6 +58997,7 @@ const bandai_data_json = {
       "brand": "PG［パーフェクトグレード］",
       "scale": "1/60",
       "name": "ガンダムアストレイ ブルーフレーム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58424,6 +59013,7 @@ const bandai_data_json = {
       "brand": "PG［パーフェクトグレード］",
       "scale": "1/60",
       "name": "ダブルオーガンダムセブンソード/Gインスペクション",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58439,6 +59029,7 @@ const bandai_data_json = {
       "brand": "RE/100［リボーンワンハンドレッド］",
       "scale": "1/100",
       "name": "イフリート・シュナイド",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58454,6 +59045,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "",
       "name": "REAL EXPERIENCE MODEL ユニコーンガンダム(AUTO-TRANS edition)【キャンペーン対象】",
+      "model": "RX-0",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58471,6 +59063,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ストライクガンダム",
+      "model": "GAT-X105",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58486,6 +59079,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ストライクガンダム ディアクティブモード",
+      "model": "GAT-X105",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58501,6 +59095,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "量産型ズゴック",
+      "model": "MSM-07",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58517,6 +59112,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "-3 ゼータガンダム3号機",
+      "model": "MSZ-006",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58532,6 +59128,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "G-3ガンダム",
+      "model": "RX-78-3",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58547,6 +59144,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ジャスティスガンダム ディアクティブモード",
+      "model": "ZGMF-X09A",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58562,6 +59160,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "フリーダムガンダム ディアクティブモード",
+      "model": "ZGMF-X10A",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58577,6 +59176,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "νガンダム[クリアカラー]初回生産限定パッケージ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58591,7 +59191,8 @@ const bandai_data_json = {
       "price": "1,650円（税込）",
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
-      "name": "ウイングガンダムゼロ EW用 拡張エフェクトユニット “セラフィムフェザー”",
+      "name": "ウイングガンダムゼロ EW 用 拡張エフェクトユニット “セラフィムフェザー”",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58607,6 +59208,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "エールストライクガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58620,6 +59222,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ガンダムアストレア タイプ-F",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58635,6 +59238,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ガンダムアストレイ ブルーフレーム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58650,6 +59254,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ガンダムアストレイゴールドフレーム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58665,6 +59270,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ガンダムエクシア (トランザムモード) グロスインジェクションVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58680,6 +59286,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ガンダムエクシア用 ガンダムアストレアパーツセット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58695,6 +59302,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ガンダムエクシア用リペアパーツセット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58710,6 +59318,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ガンダム試作1号機フルバーニアン",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58725,6 +59334,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "キャスバル専用ガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58740,6 +59350,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "シナンジュ用 拡張セット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58755,6 +59366,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ジャスティスガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58768,6 +59380,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ストライクフリーダムガンダム ディアクティブモード",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58783,6 +59396,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ストライクフリーダムガンダム用 拡張エフェクトユニット“天空の翼”",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58796,9 +59410,10 @@ const bandai_data_json = {
     {
       "product": "RG 1/144 ストライクルージュ+HG 1/144 I.W.S.P.",
       "price": "3,240円（税込）",
-      "brand": "HG［ハイグレード］",
+      "brand": "RG［リアルグレード］",
       "scale": "1/144",
-      "name": "RG ストライクルージュ+ I.W.S.P.",
+      "name": "ストライクルージュ+HG I.W.S.P.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58814,6 +59429,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "ダブルオーガンダム セブンソード",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58829,6 +59445,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "デスティニーガンダム ディアクティブモード",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58844,6 +59461,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "デスティニーガンダム用 拡張エフェクトユニット“光の翼”",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58860,6 +59478,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "トランザムライザー グロスインジェクションVer.",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58875,6 +59494,7 @@ const bandai_data_json = {
       "brand": "RG［リアルグレード］",
       "scale": "1/144",
       "name": "フリーダムガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58885,9 +59505,10 @@ const bandai_data_json = {
     {
       "product": "SDガンダムBB戦士 徳川家康頑駄無 漆黒の鎧版",
       "price": "1,300円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "徳川家康頑駄無 漆黒の鎧版",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58903,6 +59524,7 @@ const bandai_data_json = {
       "brand": "SDガンダムシリーズ",
       "scale": "",
       "name": "EXスタンダード001 ガンダム",
+      "model": "RX-78-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58918,6 +59540,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "ジオング",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58933,6 +59556,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "パーフェクトガンダム(フル装備型)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58946,6 +59570,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "アムロ専用ゼータプラス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58959,6 +59584,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "ザクII(フル装備型)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58974,6 +59600,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "ジムカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -58987,6 +59614,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "シャア専用ズゴック",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59002,6 +59630,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "グフカスタム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59017,6 +59646,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "ガンダムデスサイズ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59030,6 +59660,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "ガンダムヘビーアームズ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59043,6 +59674,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "ガンダムサンドロック",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59056,6 +59688,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "シェンロンガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59069,6 +59702,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "ガンダムGP04",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59082,6 +59716,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "ブルーディスティニー3号機",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59095,6 +59730,7 @@ const bandai_data_json = {
       "brand": "SDガンダムGジェネレーション",
       "scale": "",
       "name": "クロスボーンガンダムX2",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59108,6 +59744,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "【こちらで2種買うとポイント2倍!】「 ユニコーンガンダム パールクリアVer.」まとめ買い",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59123,6 +59760,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "【こちらで4種買うとポイント2倍!】「 劇場版ダブルオー クリアカラーVer.」まとめ買い",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59138,6 +59776,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "【抽選販売】 ジュアッグ(Ver.MSV)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59153,6 +59792,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "【抽選販売】 ボールK型(第08MS小隊版)&ボール(シャークマウス仕様)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59168,6 +59808,7 @@ const bandai_data_json = {
       "brand": "ガンダムデカール",
       "scale": "",
       "name": "機動戦士ガンダム サンダーボルト汎用1",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59181,6 +59822,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "",
       "name": "ガンダムベース限定 MS汎用ハンガー【2020年7発送】",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59196,6 +59838,7 @@ const bandai_data_json = {
       "brand": "ガンダリウム合金モデル",
       "scale": "1/144",
       "name": "ガンダム",
+      "model": "RX-78-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59212,6 +59855,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "",
       "name": "ガンプラLEDユニット2個セット(ピンク)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59227,6 +59871,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "",
       "name": "ガンプラLEDユニット2個セット(赤)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59240,6 +59885,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "",
       "name": "ガンプラLEDユニット2個セット(黄)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59255,6 +59901,7 @@ const bandai_data_json = {
       "brand": "HG［ハイグレード］",
       "scale": "1/144",
       "name": "バンダイホビーセンター専用エコプラ ガンダム",
+      "model": "RX-78-2",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59270,6 +59917,7 @@ const bandai_data_json = {
       "brand": "ビルダーズパーツHD",
       "scale": "ノンスケール",
       "name": "MSブレード01",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59280,9 +59928,10 @@ const bandai_data_json = {
     {
       "product": "ブレイブバトルウォーリアーズ 011 真 董卓ザク",
       "price": "1,100円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "011 真 董卓ザク",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59293,9 +59942,10 @@ const bandai_data_json = {
     {
       "product": "ブレイブバトルウォーリアーズ 013 真 夏侯惇ギロス",
       "price": "660円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "013 真 夏侯惇ギロス",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59306,9 +59956,10 @@ const bandai_data_json = {
     {
       "product": "ブレイブバトルウォーリアーズ 021 真 豪華 龍装 劉備ガンダム",
       "price": "4,180円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "021 真 豪華 龍装 劉備ガンダム",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59321,9 +59972,10 @@ const bandai_data_json = {
     {
       "product": "ブレイブバトルウォーリアーズ 029 真 猛虎装 孫権ガンダム・天玉鎧 弩虎",
       "price": "1,760円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "029 真 猛虎装 孫権ガンダム・天玉鎧 弩虎",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59336,9 +59988,10 @@ const bandai_data_json = {
     {
       "product": "ブレイブバトルウォーリアーズ 031 真 典韋アッシマー・賈クアシュタロン 攻城兵器セット",
       "price": "2,750円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "031 真 典韋アッシマー・賈クアシュタロン 攻城兵器セット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59349,9 +60002,10 @@ const bandai_data_json = {
     {
       "product": "ブレイブバトルウォーリアーズ 043 真 黄蓋グフ",
       "price": "660円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "043 真 黄蓋グフ",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59362,9 +60016,10 @@ const bandai_data_json = {
     {
       "product": "ブレイブバトルウォーリアーズ044 真 紅蓮装 曹操ガンダムVS猛虎装 孫権ガンダム 赤壁の戦いセット",
       "price": "2,750円（税込）",
-      "brand": "SDガンダムBB戦士",
+      "brand": "SDガンダム BB戦士",
       "scale": "",
       "name": "044 真 紅蓮装 曹操ガンダムVS猛虎装 孫権ガンダム 赤壁の戦いセット",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59380,6 +60035,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "",
       "name": "機動戦士ガンダム30th ガンプラプレミアムBOX",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
@@ -59396,6 +60052,7 @@ const bandai_data_json = {
       "brand": "",
       "scale": "",
       "name": "機動戦士ガンダム35th ガンダム & シャア専用ザクヘッド (プレミアムVer.)",
+      "model": "",
       "series": [],
       "no": "",
       "p-bandai": {
