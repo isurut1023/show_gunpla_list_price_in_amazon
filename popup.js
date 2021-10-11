@@ -27,9 +27,10 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   tag_title = toHalfWidth(tag_title);
   console.log('tag_title : ', tag_title);
 
-  // Series の取得
+  // bandai_data からシリーズのリストを取得
   var series = ''
   var seriess = bandai_data_json["series"].sort(function(a, b) {return b.length - a.length;});
+  // title からシリーズを取得
   for (const s of seriess) {
     if (tag_title.indexOf(s) >= 0) {
       tag_title = tag_title.replace(s, "");
@@ -40,24 +41,28 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   console.log('series:', series);
 
   // bandai_data からブランドのリストを取得
-  var brands = []
-  for (const key in bandai_data_json["brand"])
-    brands = brands.concat(bandai_data_json["brand"][key]['alias'])
-  brands = Array.from(new Set(brands)).sort(function(a, b) {return b.length - a.length;});
-  // title から Brand を取得
   var brand  = ''
-  for (const b of brands) {
-    if (tag_title.indexOf(b) >= 0) {
-      tag_title = tag_title.replace(b, "");
-      brand = b;
-      break;
+  var brands = bandai_data_json["brand"]
+  console.log('brands:', brands);
+  // for (const key in bandai_data_json["brand"])
+  //   brands = brands.concat(bandai_data_json["brand"][key]['alias'])
+  // brands = Array.from(new Set(brands)).sort(function(a, b) {return b.length - a.length;});
+  // title からブランドを取得
+  getbrand: for (const b in brands) {
+    for (const b_alias of brands[b]["alias"]) {
+      if (tag_title.indexOf(b_alias) >= 0) {
+        tag_title = tag_title.replace(b_alias, "");
+        brand = b;
+        break getbrand;
+      }
     }
   }
   console.log('brand:', brand);
 
-  // Scale の取得
+  // bandai_data からスケールのリストを取得
   var scale = ''
   var scales = bandai_data_json["scale"];
+  // title からスケールを取得
   for (const s of scales) {
     if (tag_title.indexOf(s) >= 0) {
       tag_title = tag_title.replace(s, "");
@@ -105,18 +110,23 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   var search = bandai_data_json['products']
   // {
   //   "product": "HG 1/144 ガンダムサバーニャ(最終決戦仕様)",
-  //   "price": "2,750円（税10%込）",
-  //   "brand": [
-  //     " HG［ハイグレード］",
-  //     "HG",
-  //     "HGUC"
-  //   ],
+  //   "price": "2,750円（税込）",
+  //   "brand": "HG［ハイグレード］",
   //   "scale": "1/144",
   //   "name": "ガンダムサバーニャ(最終決戦仕様)",
+  //   "model": "",
   //   "series": [
   //     "機動戦士ガンダム00[ダブルオー]"
   //   ],
-  //   "no": "4660"
+  //   "no": "4660",
+  //   "p-bandai": {
+  //     "no": "1000162355",
+  //     "tag": [
+  //       "ITEM_OUT_OF_STOCK",
+  //       "ITEM_RESERVE",
+  //       "RESERVE_202205"
+  //     ]
+  //   }
   // }
 
   // brand で絞り込み
@@ -153,7 +163,14 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   }
   console.log("search by name:", results)
 
-  // 各名前要素の検索結果から検索数が少ない順にソートし上位１０件を選出する。
+  // 各名前要素の検索結果から検索数が20以上のものは除外した上で少ない順にソートし上位１０件を選出する。
+  // 20というしきい値は仮
+  for (const r of results) {
+    if ( r.length >= 20 ) {
+      var index = results.indexOf(r);
+      results.splice(index, 1)
+    }
+  }
   results = results.sort()
   result  = []
   console.log("Sort by length:", results)
@@ -167,6 +184,25 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   // 上位１０件を抽出
   result = result.slice(0, 9);
   console.log("Result to insert:", result)
+
+  // url を生成
+  var url = ""
+  bandai_hobby_url = "https://bandai-hobby.net/item/"
+  p_bandai_url = "https://p-bandai.jp/item/item-"
+  for (const r of result) {
+    console.log(r)
+    if (r["no"] != "") {
+      url = bandai_hobby_url + r['no'] + '/'
+    }else if (r["no"] == "") {
+      if (r["p-bandai"]["no"] != "") {
+        url = p_bandai_url + r["p-bandai"]["no"] + '/'
+      }
+    }
+    if (url != "") {
+      r["url"] = url
+      result[result.indexOf(r)] = r
+    }
+  }
 
   // HTML 生成
   console.log("create html")
@@ -215,7 +251,6 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   // th2.style.padding        = "15px 0"
 
   // 検索結果から商品名、価格、リンクを取得
-  bandai_hobby_url = "https://bandai-hobby.net/item/"
   i = 0
   for (const r of result) {
     row = document.createElement("tr");
@@ -231,7 +266,8 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
     td1.className = "product";
     // アンカー
     anchor = document.createElement("a");
-    anchor.href = bandai_hobby_url + r['no'] + '/';
+    // anchor.href = bandai_hobby_url + r['no'] + '/';
+    anchor.href = r['url'];
     anchor.target = "_blank"
     anchor.rel = "noopener noreferrer"
     td1.appendChild(anchor)
@@ -289,6 +325,17 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
   anchor.target = "_blank"
   anchor.rel = "noopener noreferrer"
   anchorText = document.createTextNode("バンダイホビーサイト");
+  anchor.appendChild(anchorText)
+  p.appendChild(anchor);
+
+  pText = document.createTextNode("もしくは");
+  p.appendChild(pText);
+
+  anchor = document.createElement("a");
+  anchor.href = "https://p-bandai.jp/";
+  anchor.target = "_blank"
+  anchor.rel = "noopener noreferrer"
+  anchorText = document.createTextNode("プレミアムバンダイ");
   anchor.appendChild(anchorText)
   p.appendChild(anchor);
 
