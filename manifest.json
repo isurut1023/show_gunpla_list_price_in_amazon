@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Get Bandai Gunpla Price",
   "description": "Amazon などのガンプラ商品ページで即座に定価が分かります。",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "icons": {
     "128": "icon.png"
   },
