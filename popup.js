@@ -386,12 +386,12 @@ chrome.tabs.query({ active: true, currentWindow: true },function(tabs){
 
   search_insert(tag_title)
 
-  document.getElementById('button_search').addEventListener('click', function() {
-    let search_text = document.getElementById('searchText').value
-    alert(search_text)
-    document.getElementById('getBandaiPrice').remove();
-    document.getElementById('button_wrapper').remove();
-    document.getElementById('attention').remove();
-    search_insert(search_text);
-  });
+  // document.getElementById('button_search').addEventListener('click', function() {
+  //   let search_text = document.getElementById('searchText').value
+  //   alert(search_text)
+  //   document.getElementById('getBandaiPrice').remove();
+  //   document.getElementById('button_wrapper').remove();
+  //   document.getElementById('attention').remove();
+  //   search_insert(search_text);
+  // });
 });
