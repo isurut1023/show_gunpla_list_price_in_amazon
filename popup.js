@@ -90,10 +90,16 @@ function search_insert(text){
 
   // "RX-78-2ガンダム" の対応
   var model = '';
-  if (text.indexOf('RX-78-2') >= 0) {
-    text = text.replace('RX-78-2', '');
-    model = 'RX-78-2';
-    // break;
+  var models = [
+    'RX-78-2',
+    'RX-78-02'
+  ]
+  for (const m of models) {
+    if (text.indexOf(m) >= 0) {
+      text = text.replace(m, '');
+      model = m;
+      break;
+    }
   }
   console.log('model:', model);
 
