@@ -88,6 +88,15 @@ function search_insert(text){
   //   return ! removals.includes(v);
   // });
 
+  // "RX-78-2ガンダム" の対応
+  var model = '';
+  if (text.indexOf('RX-78-2') >= 0) {
+    text = text.replace('RX-78-2', '');
+    model = 'RX-78-2';
+    // break;
+  }
+  console.log('model:', model);
+
   // 連続する半角スペースを削除
   text = text.replace(/^\s+|\s+$/g,'').replace(/ +/g,' ')
   console.log('text:', text);
@@ -130,7 +139,7 @@ function search_insert(text){
   var result = search.filter(function(item, index){
     if ((item.brand).indexOf(brand) >= 0) return true;
   });
-  console.log('search by brand:', result)
+  console.log('Search by brand:', result)
 
   // brand での検索結果が null の場合 scale で絞り込み
   if (result.length) {
@@ -139,10 +148,23 @@ function search_insert(text){
     var result = search.filter(function(item, index){
       if (item.scale == scale) return true;
     });
-    console.log('search by scale:', result)
+    console.log('Search by scale:', result)
 
     // 検索結果を次の検索範囲とする、null の場合は検索範囲を変更しない。
-    if (!result.length) {
+    if (result.length) {
+      search = result
+    }
+  }
+
+  // model で絞り込み
+  if (model != '') {
+    var result = search.filter(function(item, index){
+      if ((item.model).indexOf(model) >= 0) return true;
+    });
+    console.log('Search by model:', result)
+
+    // 検索結果を次の検索範囲とする、null の場合は検索範囲を変更しない。
+    if (result.length) {
       search = result
     }
   }
@@ -157,10 +179,10 @@ function search_insert(text){
     // console.log('name:',name,'result:',result)
     if (result.length > 0) {
       console.log('name:',name,'result:',result)
-      results = results.concat(result);
+      results.push(result);
     }
   }
-  console.log("search by name:", results)
+  console.log("Search by name:", results)
 
   // 各名前要素の検索結果から少ない順にソートし上位１０件を選出する。
   results = results.sort()
