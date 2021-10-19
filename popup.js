@@ -32,7 +32,7 @@ function createHTML(gunplas) {
   // 再出荷日の情報の有無を確認
   reshipment_flag = ''
   for (const r of gunplas) {
-    if (r['reshipment_data'] != null) {
+    if (r['product']['reshipment_data'] != null) {
       reshipment_flag = 1
       break
     }
@@ -92,7 +92,8 @@ function createHTML(gunplas) {
 
   // 検索結果から商品名、価格、リンクを取得
   i = 0
-  for (const r of gunplas) {
+  for (const p of gunplas) {
+    r = p['product']
     row = document.createElement("tr");
 
     // 列に iD を付与し、8 以降はデフォルトでは非表示
