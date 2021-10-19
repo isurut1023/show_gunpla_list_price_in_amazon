@@ -28,6 +28,16 @@ function getResultFromBackgound() {
 // HTML 生成
 function createHTML(gunplas) {
   console.log("create html")
+
+  // 再出荷日の情報の有無を確認
+  reshipment_flag = ''
+  for (const r of gunplas) {
+    if (r['reshipment_data'] != null) {
+      reshipment_flag = 1
+      break
+    }
+  }
+
   div = document.createElement("div");
   div.id = "getBandaiPrice";
   // 見出しの作成
@@ -57,6 +67,14 @@ function createHTML(gunplas) {
   th2Text = document.createTextNode("バンダイホビーサイト価格");
   th2.appendChild(th2Text)
   row.appendChild(th2)
+  // 再出荷日の情報があればテーブルヘッダー「再出荷日」を追加
+  if (reshipment_flag == 1) {
+    th3 = document.createElement("th");
+    th3.className = "reshipment_date";
+    th3Text = document.createTextNode("再出荷日");
+    th3.appendChild(th3Text)
+    row.appendChild(th3)
+  }
   // テーブルヘッダーの作成
   tHead.appendChild(row);
   // テーブルの装飾
@@ -90,8 +108,8 @@ function createHTML(gunplas) {
     anchor = document.createElement("a");
     if (r['no'] != '') {
       anchor.href = 'https://bandai-hobby.net/item/' + r['no'] + '/';
-    }else if (r['p-bandai']['no'] != '') {
-      anchor.href = 'https://p-bandai.jp/item/item-' + r['p-bandai']['no'] + '/';
+    }else if (r['p-bandais'][0]['no'] != '') {
+      anchor.href = 'https://p-bandai.jp/item/item-' + r['p-bandais'][0]['no'] + '/';
     }
     anchor.target = "_blank"
     anchor.rel = "noopener noreferrer"
@@ -111,6 +129,18 @@ function createHTML(gunplas) {
     td2Text = document.createTextNode(price);
     td2.appendChild(td2Text)
     row.appendChild(td2)
+
+    // カラム「再出荷日」
+    if (reshipment_flag == 1) {
+      if (r['reshipment_data'] == null) {
+        r['reshipment_data'] = '-'
+      }
+      td3 = document.createElement("td");
+      td3.className = "reshipment_data";
+      td3Text = document.createTextNode(r['reshipment_data']);
+      td3.appendChild(td3Text)
+      row.appendChild(td3)
+    }
 
     // 列の作成
     tblBody.appendChild(row);
