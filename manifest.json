@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "表示戦士ガンプラテイカ",
+  "name": "ガンプラ定価ゲッター",
   "description": "Amazon などのガンプラ商品ページで即座に定価が分かります。",
   "version": "0.1.0",
   "icons": {
