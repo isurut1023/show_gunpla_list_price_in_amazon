@@ -164,7 +164,7 @@ function createHTML(gunplas) {
     }
 
     // カラム「プレミアムバンダイ」
-    if (pbandai_flag == 1) {
+    if (r['p-bandais'] != null) {
       p_bandai = r['p-bandais'][0]
       if (p_bandai['tag'].includes('ITEM_RESERVE_BEFORE')) {
         text = '予約開始前'
@@ -172,8 +172,10 @@ function createHTML(gunplas) {
         text = '販売開始前'
       }else if (p_bandai['tag'].includes('ITEM_RESERVE')) {
         text = '予約受付中'
-      }else if (p_bandai['tag'].includes('ITEM_OUT_OF_STOCK') || p_bandai['tag'].includes('ITEM_RESERVE_END')) {
-        text = '-'
+      }else if (p_bandai['tag'].includes('ITEM_OUT_OF_STOCK')) {
+        text = '在庫なし'
+      }else if (p_bandai['tag'].includes('ITEM_RESERVE_END')) {
+        text = '予約終了'
       }else {
         text = '販売中'
       }
@@ -186,6 +188,12 @@ function createHTML(gunplas) {
       td4Text = document.createTextNode(text);
       anchor.appendChild(td4Text)
       td4.appendChild(anchor)
+      row.appendChild(td4)
+    }else{
+      td4 = document.createElement("td");
+      td4.className = "p_bandai_status";
+      td4Text = document.createTextNode('-');
+      td4.appendChild(td4Text)
       row.appendChild(td4)
     }
 
