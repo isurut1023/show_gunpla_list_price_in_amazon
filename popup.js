@@ -38,6 +38,18 @@ function createHTML(gunplas) {
     }
   }
 
+  // プレミアムバンダイで予約・販売中もしくはその予定があるかどうか確認
+  pbandai_flag = ''
+  for (const r of gunplas) {
+    if (r['product']['p-bandais'] != null) {
+      p_bandai = r['product']['p-bandais'][0]
+      if (!p_bandai['tag'].includes('ITEM_OUT_OF_STOCK') && !p_bandai['tag'].includes('ITEM_RESERVE_END')) {
+        pbandai_flag = 1
+        break
+      }
+    }
+  }
+
   div = document.createElement("div");
   div.id = "getBandaiPrice";
   // 見出しの作成
@@ -74,6 +86,14 @@ function createHTML(gunplas) {
     th3Text = document.createTextNode("再出荷日");
     th3.appendChild(th3Text)
     row.appendChild(th3)
+  }
+  // 再出荷日の情報があればテーブルヘッダー「再出荷日」を追加
+  if (pbandai_flag == 1) {
+    th4 = document.createElement("th");
+    th4.className = "reshipment_date";
+    th4Text = document.createTextNode("プレミアムバンダイ");
+    th4.appendChild(th4Text)
+    row.appendChild(th4)
   }
   // テーブルヘッダーの作成
   tHead.appendChild(row);
@@ -141,6 +161,32 @@ function createHTML(gunplas) {
       td3Text = document.createTextNode(r['reshipment_data']);
       td3.appendChild(td3Text)
       row.appendChild(td3)
+    }
+
+    // カラム「プレミアムバンダイ」
+    if (pbandai_flag == 1) {
+      p_bandai = r['p-bandais'][0]
+      if (p_bandai['tag'].includes('ITEM_RESERVE_BEFORE')) {
+        text = '予約開始前'
+      }else if (p_bandai['tag'].includes('ITEM_SALE_BEFORE')) {
+        text = '販売開始前'
+      }else if (p_bandai['tag'].includes('ITEM_RESERVE')) {
+        text = '予約受付中'
+      }else if (p_bandai['tag'].includes('ITEM_OUT_OF_STOCK') || p_bandai['tag'].includes('ITEM_RESERVE_END')) {
+        text = '-'
+      }else {
+        text = '販売中'
+      }
+      anchor = document.createElement("a");
+      anchor.href = 'https://p-bandai.jp/item/item-' + r['p-bandais'][0]['no'] + '/';
+      anchor.target = "_blank"
+      anchor.rel = "noopener noreferrer"
+      td4 = document.createElement("td");
+      td4.className = "p_bandai_status";
+      td4Text = document.createTextNode(text);
+      anchor.appendChild(td4Text)
+      td4.appendChild(anchor)
+      row.appendChild(td4)
     }
 
     // 列の作成
