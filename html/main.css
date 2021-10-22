@@ -60,6 +60,9 @@ table tbody th {
   color: #000;
   /* font-weight: bold; */
 }
+.p_bandai_status{
+  text-align: center;
+}
 @media screen and (max-width: 600px) {
   table{width: 100%;}
 }
