@@ -49,6 +49,7 @@ function createHTML(gunplas) {
       }
     }
   }
+  pbandai_flag = 1
 
   div = document.createElement("div");
   div.id = "getBandaiPrice";
@@ -82,15 +83,15 @@ function createHTML(gunplas) {
   // 再出荷日の情報があればテーブルヘッダー「再出荷日」を追加
   if (reshipment_flag == 1) {
     th3 = document.createElement("th");
-    th3.className = "reshipment_date";
+    th3.className = "reshipment";
     th3Text = document.createTextNode("再出荷日");
     th3.appendChild(th3Text)
     row.appendChild(th3)
   }
-  // 再出荷日の情報があればテーブルヘッダー「再出荷日」を追加
+  // プレミアムバンダイの情報があればテーブルヘッダー「プレミアムバンダイ」を追加
   if (pbandai_flag == 1) {
     th4 = document.createElement("th");
-    th4.className = "reshipment_date";
+    th4.className = "p_bandai_status";
     th4Text = document.createTextNode("プレミアムバンダイ");
     th4.appendChild(th4Text)
     row.appendChild(th4)
@@ -164,37 +165,45 @@ function createHTML(gunplas) {
     }
 
     // カラム「プレミアムバンダイ」
-    if (r['p-bandais'] != null) {
-      p_bandai = r['p-bandais'][0]
-      if (p_bandai['tag'].includes('ITEM_RESERVE_BEFORE')) {
-        text = '予約開始前'
-      }else if (p_bandai['tag'].includes('ITEM_SALE_BEFORE')) {
-        text = '販売開始前'
-      }else if (p_bandai['tag'].includes('ITEM_RESERVE')) {
-        text = '予約受付中'
-      }else if (p_bandai['tag'].includes('ITEM_OUT_OF_STOCK')) {
-        text = '在庫なし'
-      }else if (p_bandai['tag'].includes('ITEM_RESERVE_END')) {
-        text = '予約終了'
-      }else {
-        text = '販売中'
-      }
+    if (pbandai_flag == 1) {
+      if (r['p-bandais'] != null) {
+        p_bandai = r['p-bandais'][0]
+        if (p_bandai['tag'].includes('ITEM_OUT_OF_STOCK')) {
+          text = '在庫なし'
+          class_p_bandai_status = "p_bandai_status_out_of_stock"
+        }else if (p_bandai['tag'].includes('ITEM_RESERVE_END')) {
+          text = '予約終了'
+          class_p_bandai_status = "p_bandai_status_reserve_end"
+        }else if (p_bandai['tag'].includes('ITEM_RESERVE_BEFORE')) {
+          text = '予約開始前'
+          class_p_bandai_status = "p_bandai_status_reserve_before"
+        }else if (p_bandai['tag'].includes('ITEM_SALE_BEFORE')) {
+          text = '販売開始前'
+          class_p_bandai_status = "p_bandai_status_sale_before"
+        }else if (p_bandai['tag'].includes('ITEM_RESERVE')) {
+          text = '予約受付中'
+          class_p_bandai_status = "p_bandai_status_reserve"
+        }else {
+          text = '販売中'
+          class_p_bandai_status = "p_bandai_status_sale"
+        }
       anchor = document.createElement("a");
       anchor.href = 'https://p-bandai.jp/item/item-' + r['p-bandais'][0]['no'] + '/';
       anchor.target = "_blank"
       anchor.rel = "noopener noreferrer"
       td4 = document.createElement("td");
-      td4.className = "p_bandai_status";
+      td4.className = class_p_bandai_status;
       td4Text = document.createTextNode(text);
       anchor.appendChild(td4Text)
       td4.appendChild(anchor)
       row.appendChild(td4)
-    }else{
+      }else{
       td4 = document.createElement("td");
       td4.className = "p_bandai_status";
       td4Text = document.createTextNode('-');
       td4.appendChild(td4Text)
       row.appendChild(td4)
+      }
     }
 
     // 列の作成

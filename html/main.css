@@ -60,8 +60,38 @@ table tbody th {
   color: #000;
   /* font-weight: bold; */
 }
+.reshipment{
+  text-align: center;
+}
+.reshipment_data{
+  text-align: right;
+}
 .p_bandai_status{
   text-align: center;
+}
+.p_bandai_status_reserve_before{
+  text-align: center;
+}
+.p_bandai_status_sale_before{
+  text-align: center;
+}
+.p_bandai_status_reserve{
+  text-align: center;
+}
+.p_bandai_status_out_of_stock{
+  text-align: center;
+  font-weight:lighter;
+  color: #d8d8d8;
+}
+.p_bandai_status_reserve_end{
+  text-align: center;
+  font-weight:lighter;
+  color: #d8d8d8;
+}
+.p_bandai_status_sale{
+  text-align: center;
+  font-weight: bold;
+  color: #FF0000;
 }
 @media screen and (max-width: 600px) {
   table{width: 100%;}
