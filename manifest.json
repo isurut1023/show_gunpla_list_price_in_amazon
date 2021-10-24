@@ -7,9 +7,7 @@
     "128": "icon.png"
   },
   "action": {
-    "default_title": "Click to get Bandai Price."
-  },
-  "action": {
+    "default_title": "Click to get Bandai Price.",
     "default_popup": "html/popup.html"
   },
   "background": {
