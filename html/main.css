@@ -88,6 +88,11 @@ table tbody th {
   font-weight:lighter;
   color: #d8d8d8;
 }
+.p_bandai_status_sale_end{
+  text-align: center;
+  font-weight:lighter;
+  color: #d8d8d8;
+}
 .p_bandai_status_sale{
   text-align: center;
   font-weight: bold;

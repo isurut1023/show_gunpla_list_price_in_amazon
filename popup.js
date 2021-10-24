@@ -174,6 +174,9 @@ function createHTML(gunplas) {
         }else if (p_bandai['tag'].includes('ITEM_RESERVE_END')) {
           text = '予約終了'
           class_p_bandai_status = "p_bandai_status_reserve_end"
+        }else if (p_bandai['tag'].includes('ITEM_SALE_END')) {
+          text = '販売終了'
+          class_p_bandai_status = "p_bandai_status_sale_end"
         }else if (p_bandai['tag'].includes('ITEM_RESERVE_BEFORE')) {
           text = '予約開始前'
           class_p_bandai_status = "p_bandai_status_reserve_before"
