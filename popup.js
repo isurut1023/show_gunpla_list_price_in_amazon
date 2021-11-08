@@ -53,20 +53,12 @@ function createHTML(gunplas) {
 
   div = document.createElement("div");
   div.id = "getBandaiPrice";
-  // 見出しの作成
-  // hGunplaListPrice = document.createElement("h2");
-  // hGunplaListPrice.id = "gunplaListPrise"
-  // hGunplaListPriceText = document.createTextNode("ガンプラ定価情報");
-  // hGunplaListPrice.appendChild(hGunplaListPriceText)
-  // hGunplaListPrice.style.borderTop = "1px solid rgb(204, 204, 204)"
-  // 挿入
-  // element = document.getElementById('ppd');
-  // element.insertAdjacentElement('afterend', hGunplaListPrice);
+
   // テーブル
   tbl = document.createElement("table");
   tHead = document.createElement("thead");
   tblBody = document.createElement("tbody");
-  // テーブルヘッダー
+
   // テーブルヘッダー「商品名」
   row = document.createElement("tr");
   th1 = document.createElement("th");
@@ -74,6 +66,7 @@ function createHTML(gunplas) {
   th1Text = document.createTextNode("関連商品（バンダイホビーサイト外部リンク）");
   th1.appendChild(th1Text)
   row.appendChild(th1)
+
   // テーブルヘッダー「価格」
   th2 = document.createElement("th");
   th2.className = "prices";
@@ -98,18 +91,6 @@ function createHTML(gunplas) {
   }
   // テーブルヘッダーの作成
   tHead.appendChild(row);
-  // テーブルの装飾
-  // tbl.style.borderCollapse = "collapse"
-  // tbl.style.minWidth       = "935px"
-  // tbl.style.maxWidth       = "960px"
-  // row.style.borderBottom   = "solid 1px #eee"
-  // row.style.cursor         = "pointer"
-  // th1.style.textAlign      = "left"
-  // th1.style.width          = "75%"
-  // th1.style.padding        = "15px 0"
-  // th2.style.textAlign      = "left"
-  // th2.style.width          = "25%"
-  // th2.style.padding        = "15px 0"
 
   // 検索結果から商品名、価格、リンクを取得
   i = 0
@@ -223,6 +204,7 @@ function createHTML(gunplas) {
   // 列が８以上の場合は "read more" を追加・挿入
   if (tblBody.childElementCount > 8) {
     div_button = document.createElement("div");
+    div_button.id = "button_wrapper";
     div_button.className = "button_wrapper";
 
     button = document.createElement('button');
@@ -276,8 +258,9 @@ function createHTML(gunplas) {
   //document.body.insertBefore(div, document.getElementById("content"));
 
   // ローディングを削除
-  loader = document.getElementById('loader');
-  loader.remove();
+  if (document.getElementById('loader') != null) {
+    document.getElementById('loader').remove();
+  }
 
   　// "read more" のアクション
   // 8列以上を表示・非表示を切り替える
