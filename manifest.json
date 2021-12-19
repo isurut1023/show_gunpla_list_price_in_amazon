@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "ガンプラ定価ゲッター",
   "description": "Amazon などのガンプラ商品ページで即座に定価が分かります。",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "icons": {
     "128": "icon.png"
   },
@@ -15,5 +15,8 @@
   },
   "permissions": [
     "tabs"
-	]
+	],
+  "host_permissions": [
+    "https://gunpla-database.doc-sin.life/"
+  ]
 }

@@ -17,7 +17,7 @@ function helloBackgound() {
 function getResultFromBackgound() {
   chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-      createHTML(request.result['gunplas'])
+      createHTML(request.result['products'])
       sendResponse({
         msg: "received responseFromAPI from background.js"
       });
@@ -26,30 +26,8 @@ function getResultFromBackgound() {
 }
 
 // HTML 生成
-function createHTML(gunplas) {
+function createHTML(products) {
   console.log("create html")
-
-  // 再出荷日の情報の有無を確認
-  reshipment_flag = ''
-  for (const r of gunplas) {
-    if (r['product']['reshipment_data'] != null) {
-      reshipment_flag = 1
-      break
-    }
-  }
-
-  // プレミアムバンダイで予約・販売中もしくはその予定があるかどうか確認
-  pbandai_flag = ''
-  for (const r of gunplas) {
-    if (r['product']['p-bandais'] != null) {
-      p_bandai = r['product']['p-bandais'][0]
-      if (!p_bandai['tag'].includes('ITEM_OUT_OF_STOCK') && !p_bandai['tag'].includes('ITEM_RESERVE_END')) {
-        pbandai_flag = 1
-        break
-      }
-    }
-  }
-  pbandai_flag = 1
 
   div = document.createElement("div");
   div.id = "getBandaiPrice";
@@ -73,29 +51,25 @@ function createHTML(gunplas) {
   th2Text = document.createTextNode("バンダイホビーサイト価格");
   th2.appendChild(th2Text)
   row.appendChild(th2)
-  // 再出荷日の情報があればテーブルヘッダー「再出荷日」を追加
-  if (reshipment_flag == 1) {
-    th3 = document.createElement("th");
-    th3.className = "reshipment";
-    th3Text = document.createTextNode("再出荷日");
-    th3.appendChild(th3Text)
-    row.appendChild(th3)
-  }
-  // プレミアムバンダイの情報があればテーブルヘッダー「プレミアムバンダイ」を追加
-  if (pbandai_flag == 1) {
-    th4 = document.createElement("th");
-    th4.className = "p_bandai_status";
-    th4Text = document.createTextNode("プレミアムバンダイ");
-    th4.appendChild(th4Text)
-    row.appendChild(th4)
-  }
+  // 「再出荷日」のカラムを追加
+  th3 = document.createElement("th");
+  th3.className = "reshipment";
+  th3Text = document.createTextNode("再出荷日");
+  th3.appendChild(th3Text)
+  row.appendChild(th3)
+  // 他販売サイトのカラムを追加
+  th4 = document.createElement("th");
+  th4.className = "p_bandai_status";
+  th4Text = document.createTextNode("他販売サイト");
+  th4.appendChild(th4Text)
+  row.appendChild(th4)
   // テーブルヘッダーの作成
   tHead.appendChild(row);
 
   // 検索結果から商品名、価格、リンクを取得
   i = 0
-  for (const p of gunplas) {
-    r = p['product']
+  for (const p of products) {
+    r = p
     row = document.createElement("tr");
 
     // 列に iD を付与し、8 以降はデフォルトでは非表示
@@ -109,13 +83,9 @@ function createHTML(gunplas) {
     td1.className = "product";
     // アンカー
     anchor = document.createElement("a");
-    if (r['no'] != '') {
-      anchor.href = 'https://bandai-hobby.net/item/' + r['no'] + '/';
-    }else if (r['p-bandais'][0]['no'] != '') {
-      anchor.href = 'https://p-bandai.jp/item/item-' + r['p-bandais'][0]['no'] + '/';
-    }
+    anchor.href   = r['product_url']
     anchor.target = "_blank"
-    anchor.rel = "noopener noreferrer"
+    anchor.rel    = "noopener noreferrer"
     td1.appendChild(anchor)
     // テキスト
     td1Text = document.createTextNode(r['product']);
@@ -134,62 +104,33 @@ function createHTML(gunplas) {
     row.appendChild(td2)
 
     // カラム「再出荷日」
-    if (reshipment_flag == 1) {
-      if (r['reshipment_data'] == null) {
-        r['reshipment_data'] = '-'
-      }
-      td3 = document.createElement("td");
-      td3.className = "reshipment_data";
-      td3Text = document.createTextNode(r['reshipment_data']);
-      td3.appendChild(td3Text)
-      row.appendChild(td3)
+    if (r['reshipment_data'] == '') {
+      r['reshipment_data'] = '-'
     }
+    td3 = document.createElement("td");
+    td3.className = "reshipment_data";
+    td3Text = document.createTextNode(r['reshipment_data']);
+    td3.appendChild(td3Text)
+    row.appendChild(td3)
 
-    // カラム「プレミアムバンダイ」
-    if (pbandai_flag == 1) {
-      if (r['p-bandais'] != null) {
-        p_bandai = r['p-bandais'][0]
-        if (p_bandai['tag'].includes('ITEM_OUT_OF_STOCK')) {
-          text = '在庫なし'
-          class_p_bandai_status = "p_bandai_status_out_of_stock"
-        }else if (p_bandai['tag'].includes('ITEM_RESERVE_END')) {
-          text = '予約終了'
-          class_p_bandai_status = "p_bandai_status_reserve_end"
-        }else if (p_bandai['tag'].includes('ITEM_SALE_END')) {
-          text = '販売終了'
-          class_p_bandai_status = "p_bandai_status_sale_end"
-        }else if (p_bandai['tag'].includes('ITEM_RESERVE_BEFORE')) {
-          text = '予約開始前'
-          class_p_bandai_status = "p_bandai_status_reserve_before"
-        }else if (p_bandai['tag'].includes('ITEM_SALE_BEFORE')) {
-          text = '販売開始前'
-          class_p_bandai_status = "p_bandai_status_sale_before"
-        }else if (p_bandai['tag'].includes('ITEM_RESERVE')) {
-          text = '予約受付中'
-          class_p_bandai_status = "p_bandai_status_reserve"
-        }else {
-          text = '販売中'
-          class_p_bandai_status = "p_bandai_status_sale"
-        }
-      anchor = document.createElement("a");
-      anchor.href = 'https://p-bandai.jp/item/item-' + r['p-bandais'][0]['no'] + '/';
-      anchor.target = "_blank"
-      anchor.rel = "noopener noreferrer"
-      td4 = document.createElement("td");
-      td4.className = class_p_bandai_status;
-      td4Text = document.createTextNode(text);
-      anchor.appendChild(td4Text)
-      td4.appendChild(anchor)
-      row.appendChild(td4)
-      }else{
-      td4 = document.createElement("td");
-      td4.className = "p_bandai_status";
-      td4Text = document.createTextNode('-');
-      td4.appendChild(td4Text)
-      row.appendChild(td4)
-      }
+    // カラム「他販売サイト」
+    if (r['other_shop_status'] == 'available') {
+      text = '在庫あり'
+      class_p_bandai_status = "p_bandai_status_sale"
+    }else {
+      text = '在庫なし'
+      class_p_bandai_status = "p_bandai_status_out_of_stock"
     }
-
+    anchor = document.createElement("a");
+    anchor.href = r['gunpla_database_url'];
+    anchor.target = "_blank"
+    anchor.rel = "noopener noreferrer"
+    td4 = document.createElement("td");
+    td4.className = class_p_bandai_status;
+    td4Text = document.createTextNode(text);
+    anchor.appendChild(td4Text)
+    td4.appendChild(anchor)
+    row.appendChild(td4)
     // 列の作成
     tblBody.appendChild(row);
   }
@@ -227,21 +168,10 @@ function createHTML(gunplas) {
   p.appendChild(pText);
 
   anchor = document.createElement("a");
-  anchor.href = "https://bandai-hobby.net/item_all/";
+  anchor.href = "https://gunpla-database.doc-sin.life/";
   anchor.target = "_blank"
   anchor.rel = "noopener noreferrer"
-  anchorText = document.createTextNode("バンダイホビーサイト");
-  anchor.appendChild(anchorText)
-  p.appendChild(anchor);
-
-  pText = document.createTextNode("もしくは");
-  p.appendChild(pText);
-
-  anchor = document.createElement("a");
-  anchor.href = "https://p-bandai.jp/";
-  anchor.target = "_blank"
-  anchor.rel = "noopener noreferrer"
-  anchorText = document.createTextNode("プレミアムバンダイ");
+  anchorText = document.createTextNode("ガンダムデータベース");
   anchor.appendChild(anchorText)
   p.appendChild(anchor);
 
