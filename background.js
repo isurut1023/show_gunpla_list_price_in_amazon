@@ -2,8 +2,8 @@ console.log('started background.js')
 
 importScripts("bandai_tag.js");
 
-// url = "https://4xdzlpnj1i.execute-api.ap-northeast-1.amazonaws.com/search_gunplas"
-base_url = "http://127.0.0.1:8000/api?title="
+// base_url = "http://127.0.0.1:8000/api?title="
+base_url = "https://gunpla-database.doc-sin.life/api?title="
 
 
 function replaceFullToHalf(str){

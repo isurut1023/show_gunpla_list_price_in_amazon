@@ -104,7 +104,7 @@ function createHTML(products) {
     row.appendChild(td2)
 
     // カラム「再出荷日」
-    if (r['reshipment_data'] == null) {
+    if (r['reshipment_data'] == '') {
       r['reshipment_data'] = '-'
     }
     td3 = document.createElement("td");
