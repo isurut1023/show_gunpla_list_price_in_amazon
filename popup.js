@@ -52,11 +52,11 @@ function createHTML(products) {
   th2.appendChild(th2Text)
   row.appendChild(th2)
   // 「再出荷日」のカラムを追加
-  th3 = document.createElement("th");
-  th3.className = "reshipment";
-  th3Text = document.createTextNode("再出荷日");
-  th3.appendChild(th3Text)
-  row.appendChild(th3)
+  // th3 = document.createElement("th");
+  // th3.className = "reshipment";
+  // th3Text = document.createTextNode("再出荷日");
+  // th3.appendChild(th3Text)
+  // row.appendChild(th3)
   // 他販売サイトのカラムを追加
   th4 = document.createElement("th");
   th4.className = "p_bandai_status";
@@ -104,14 +104,14 @@ function createHTML(products) {
     row.appendChild(td2)
 
     // カラム「再出荷日」
-    if (r['reshipment_data'] == '') {
-      r['reshipment_data'] = '-'
-    }
-    td3 = document.createElement("td");
-    td3.className = "reshipment_data";
-    td3Text = document.createTextNode(r['reshipment_data']);
-    td3.appendChild(td3Text)
-    row.appendChild(td3)
+    // if (r['reshipment_data'] == '') {
+    //   r['reshipment_data'] = '-'
+    // }
+    // td3 = document.createElement("td");
+    // td3.className = "reshipment_data";
+    // td3Text = document.createTextNode(r['reshipment_data']);
+    // td3.appendChild(td3Text)
+    // row.appendChild(td3)
 
     // カラム「他販売サイト」
     if (r['other_shop_status'] == 'available') {
